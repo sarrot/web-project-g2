@@ -1,0 +1,168 @@
+/* ----------------------------------------------------
+  Created by Christina Truong for Ladies Learning Code
+  http://ladieslearningcode.com
+  http://christinatruong.com
+-------------------------------------------------------*/
+
+
+/* GLOBAL STYLES
+-----------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+*{box-sizing: border-box;
+    font-family: 'Amatic SC', cursive; }
+@media only screen and (max-width: 1000px) {
+   .zoom{
+    width:80%;
+    padding: 10px;
+    }
+}
+
+body {
+  height: 100%;
+}
+
+h1{
+  margin-right: 50px;
+}
+
+h2 {
+  font-size: 4vw;
+  direction: rtl;  /* Right to Left */
+  padding: 0 100px;
+}
+
+
+/* Photos */
+/*#photos  {*/
+/*	display: flex;*/
+/*	flex-wrap: wrap;*/
+/*	padding: 0 40px;*/
+/*	text-align: center;*/
+/*	margin-left: 10em;*/
+/*	margin-right: 10em;*/
+
+/*}*/
+
+/*!* Create four equal columns that sits next to each other *!*/
+/*#photos {*/
+/*	flex: 25%;*/
+/*	max-width: 25%;*/
+/*	padding: 0 4px;*/
+/*	display: block;*/
+/*	margin: 0 auto;*/
+
+/*}*/
+
+#photos {
+	vertical-align: middle;
+	width: 100%;
+}
+
+.zoom {
+	transition: transform .5s;
+    padding: 5%;
+    width: 30%;
+    float: right;
+}
+
+.zoom:hover {
+	transform: scale(1.1);
+}
+
+/* Image */
+
+.image {
+	border-radius: 0;
+	border: 0;
+	display: inline-block;
+	position: relative;
+}
+
+a {
+  color: #bf6d50;
+  text-decoration: none; /* removes default underline */
+}
+/*when typing nav button */
+a:hover {
+  background: peachpuff  /*rgba(255, 255, 255, 0.3)*/;
+}
+header,
+
+header {
+  background: white;
+}
+main {
+  background: darksalmon;
+}
+
+nav {
+  	margin-left: 10em;
+	margin-right: 10em;
+}
+.highlight {
+  color: #bf6d50;
+}
+
+/* HEADER STYLES
+-----------------------------------------*/
+header h1 {
+    font-size: 100px;
+}
+header h2 {
+  font-size: 24px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  padding: 0 20px;
+}
+
+/* HOME PAGE STYLES
+-----------------------------------------*/
+.hero-image {
+  width: 100%;
+}
+
+/* ABOUT STYLES
+-----------------------------------------*/
+.profile-img {
+  float: left;
+  margin-right: 20px;
+  width: 50%; /* Force the profile image to always take up 50% of available horizontal space. */
+}
+blockquote {
+  clear: both;
+  padding: 5px 150px;
+  text-align: center;
+}
+blockquote p {
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
+}
+
+/* CONTACT STYLES
+-----------------------------------------*/
+.contact {
+  background: url(../images/background-8.jpg) no-repeat 50%;
+  background-size: cover;
+}
+.contact main {
+  background: rgba(255, 255, 255, 0.7);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.contact main h1 {
+  text-transform: none;
+}
+
+/* FOOTER STYLES
+-----------------------------------------*/
+footer {
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 1px;
+  text-transform: lowercase;
+}
