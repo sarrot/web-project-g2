@@ -21,15 +21,35 @@ body {
 h1{
   margin-right: 50px;
   font-size: 7vw;
+   margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
   font-size: 4vw;
   direction: rtl;  /* Right to Left */
   padding: 0 100px;
+  margin: 0;
 }
 
+#log{
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+button{
+  padding: 5px;
+  margin: 5px;
+}
+
+
+
 .picture{
+  margin: 0;
+      padding:0;
       padding-left: 10%;
 }
 #pic5{
@@ -58,26 +78,31 @@ h2 {
 	transform: scale(1.1);
 }
 
-a {
+.navlink{
   padding: 0 20px;
+  margin: 0;
   color: var(--boldPeach);
   text-decoration: none; /* removes default underline */
   font-size:2.5vw;
 }
+
 /*when typing nav button */
-a:hover {
+a.navlink:hover {
   background: peachpuff;
 }
 
 header {
   background: white;
-      display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-
+  margin: 0;
+  padding: 0;
 }
 main {
   background: darksalmon;
+  margin: 0;
+  padding: 0;
 }
 
 .highlight {
