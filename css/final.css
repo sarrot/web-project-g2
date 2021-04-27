@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 *{box-sizing: border-box;
     font-family: 'Amatic SC', cursive; }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 758px) {
    .zoom{
     width:70%;
     padding: 10px;
@@ -14,16 +14,15 @@
 :root{--boldPeach:#bf6d50
 }
 
-body {
-  /*height: 100%;*/
+body{
+      text-align: center;
 }
 
 h1{
-  margin-right: 50px;
-  font-size: 7vw;
-   margin: 0;
-  padding: 0;
-  margin: 0;
+  /*margin-right: 50px;*/
+  font-size: 5vw;
+  margin: 0px;
+  padding-right: 5%;
 }
 
 h2 {
@@ -33,32 +32,28 @@ h2 {
   margin: 0;
 }
 
-#log{
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+/*HOME PIC
+--------------------------------------------------*/
 
+figcaption{
+  font-size:x-large;
 }
 
-button{
-  padding: 5px;
-  margin: 5px;
+text1{
+  padding-left: 5%;
+  font-size-adjust: inherit;
 }
-
-
-
 .picture{
   margin: 0;
-      padding:0;
-      padding-left: 10%;
+      padding-left: 0%;
 }
 #pic5{
   padding-right:5% ;
-  width:35%;
+  width:27%;
 }
 #pic4{
   padding-left:5% ;
-  width:35%;
+  width:27%;
 }
 #pic1{
   padding: 5%;
@@ -67,7 +62,7 @@ button{
 
 #pic2{
   padding: 5%;
-  width:30%;
+  width:35%;
 }
 #pic3{
   padding: 5%;
@@ -77,6 +72,9 @@ button{
 .zoom:hover {
 	transform: scale(1.1);
 }
+
+/*HEDAER AND NAV
+----------------------------------------------*/
 
 .navlink{
   padding: 0 20px;
@@ -92,39 +90,41 @@ a.navlink:hover {
 }
 
 header {
+    direction: rtl;
+  width: 100%;
   background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
-  padding: 0;
-}
-main {
-  background: darksalmon;
-  margin: 0;
-  padding: 0;
+  text-align: right;
+
 }
 
 .highlight {
   color: var(--boldPeach);
 }
 
+/*MAIN
+-----------------------------------------*/
+main {
+  background: #ecab94;
+
+}
+
+
+
 /* ABOUT STYLES
 -----------------------------------------*/
-.profile-img {
-  float: left;
-  margin-right: 20px;
-  width: 50%; /* Force the profile image to always take up 50% of available horizontal space. */
-}
-blockquote {
-  clear: both;
-  padding: 5px 150px;
-  text-align: center;
-}
-blockquote p {
-  font-family: "Pacifico", cursive;
-  font-size: 30px;
-}
+
+/*blockquote {*/
+/*  clear: both;*/
+/*  padding: 5px 150px;*/
+/*  text-align: center;*/
+/*}*/
+/*blockquote p {*/
+/*  font-family: "Pacifico", cursive;*/
+/*  font-size: 30px;*/
+/*}*/
 
 /* FOOTER STYLES
 -----------------------------------------*/
@@ -134,3 +134,54 @@ footer {
   padding: 1px;
   text-transform: lowercase;
 }
+
+/* REGISTER+LOGIN STYLES
+---------------------------------------*/
+
+
+
+form {
+   display: inline-block;
+  background-color: antiquewhite;
+  border: 3px solid #f1f1f1;
+  width: 40%;
+  font-size: 1.5vw;
+
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+   direction: rtl;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #bf6d50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.5vw;
+
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+
+/* Add padding to containers */
+.container {
+  margin: 20px;
+}
+
+
