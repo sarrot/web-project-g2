@@ -1,0 +1,15 @@
+*{box-sizing: border-box;
+    font-family: 'Amatic SC', cursive; }
+
+
+
+.fruit{
+    width:40%;
+    text-align: center;
+}
+.fruitName{
+     width:10%;
+     padding-left: 10%;
+}
+
+
