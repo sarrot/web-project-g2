@@ -7,9 +7,12 @@
     font-family: 'Amatic SC', cursive; }
 @media only screen and (max-width: 758px) {
    .zoom{
-    width:70%;
-    padding: 10px;
+    width:80%;
+    padding:10%;
+     float: none ;
+     text-align: center;
     }
+
 }
 :root{--boldPeach:#bf6d50
 }
@@ -43,30 +46,39 @@ text1{
   padding-left: 5%;
   font-size-adjust: inherit;
 }
-.picture{
-  margin: 0;
-      padding-left: 0%;
-}
+
 #pic5{
-  padding-right:5% ;
-  width:27%;
+
+  padding: 5%;
+  width:33%;
+  float: none;
+    border: #bf6d50;
 }
 #pic4{
-  padding-left:5% ;
-  width:27%;
+ padding: 5%;
+  width:33%;
+  float: none;
+}
+#pic6{
+ padding: 5%;
+  width:33%;
+  float: none;
 }
 #pic1{
-  padding: 5%;
-  width:30%;
+ padding: 5%;
+  width:33%;
+  float: none;
 }
 
 #pic2{
   padding: 5%;
-  width:35%;
+  width:33%;
+  float: none;
 }
 #pic3{
-  padding: 5%;
-  width:30%;
+  /*padding: 5%;*/  padding: 5%;
+  width:33%;
+  float: none;
 }
 
 .zoom:hover {
@@ -108,8 +120,10 @@ header {
 -----------------------------------------*/
 main {
   background: #ecab94;
+  width: 100%;
 
 }
+
 
 
 
@@ -133,6 +147,10 @@ footer {
   text-align: center;
   padding: 1px;
   text-transform: lowercase;
+  position: -ms-device-fixed;
+  float: bottom;
+  width: 100%;
+
 }
 
 /* REGISTER+LOGIN STYLES
@@ -150,7 +168,7 @@ form {
 }
 
 /* Full-width inputs */
-input[type=text], input[type=password] {
+input[type=text], input[type=password] ,input[type=email], textarea[type=message]{
    direction: rtl;
   width: 100%;
   padding: 12px 20px;
@@ -158,6 +176,7 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+
 }
 
 /* Set a style for all buttons */
@@ -179,9 +198,9 @@ button:hover {
 }
 
 
-/* Add padding to containers */
-.container {
-  margin: 20px;
-}
+/*!* Add padding to containers *!*/
+/*.container {*/
+/*  margin: 20px;*/
+/*}*/
 
 
