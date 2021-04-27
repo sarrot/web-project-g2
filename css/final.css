@@ -168,9 +168,21 @@ form {
 }
 
 /* Full-width inputs */
-input[type=text], input[type=password] ,input[type=email], textarea[type=message]{
+input[type=text], input[type=password] ,input[type=email] {
    direction: rtl;
   width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+}
+
+textarea[type=message]{
+  direction: rtl;
+  width: 100%;
+  height: 150px ;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;

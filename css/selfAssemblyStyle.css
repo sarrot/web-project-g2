@@ -3,13 +3,25 @@
 
 
 
-.fruit{
-    width:40%;
-    text-align: center;
-}
-.fruitName{
-     width:10%;
-     padding-left: 10%;
-}
+/*figure{*/
+/*    width:10px;*/
+/*    float: left;*/
 
+/*}*/
+/*.pic{*/
+/*     width:10px;*/
+/*    float: left;*/
+/*}*/
+
+
+
+
+.grid-container{
+    display: grid;
+
+}
+.item1{
+
+    width: 20%;
+}
 
