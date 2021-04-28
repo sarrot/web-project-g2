@@ -2,33 +2,59 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Jane Smith | Contact Me</title>
-		<link href='http://fonts.googleapis.com/css?family=Nixie+One|Open+Sans:300|Pacifico' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/final.css">
-		<link rel="shortcut icon" href="favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>תותי פרוטי-צור קשר</title>
+<!--		<link href='http://fonts.googleapis.com/css?family=Nixie+One|Open+Sans:300|Pacifico' rel='stylesheet' type='text/css'>-->
+		<link rel="stylesheet" href="css/contact.css">
+		<link rel="shortcut icon" href="imageProject/painapple.jpg">
 	</head>
 	<body class="contact">
 		<!-- Header & Nav -->
 		<header>
-			<!-- Page title and tagline -->
-			<div>
-				<h1><span class="highlight">Jane</span>Smith</h1>
-				<h2>Web Developer + City Girl</h2>
-			</div>
-
 			<!-- Navigation links -->
-			<nav>
-				<a href="index.html">Home</a>
-				<a href="about.html">About</a>
-				<a href="contact.html">Contact</a>
+
+
+			<nav id="nava">
+				<h1><span class="highlight">תותי</span>פרותי</h1>
+				<b>
+				<a class="navlink" href="index.html">בית</a>
+				<a class="navlink" href="about.html">הרכבה עצמית</a>
+				<a class="navlink" href="season.html">מגשי העונה</a>
+				<a class="navlink" href="contact.html">צור קשר</a>
+				<a class="navlink" href="shoppingcart.html">סל קניות</a>
+				</b>
+
+
 			</nav>
+				<div>
+				<b>
+				<a class="navlink" href="register.html">הרשמה</a>
+				<a class="navlink" href="login.html">התחברות</a>
+				</b>
+				</div>
 		</header>
 
-		<main role="main">
-			<h1>Let's meet for coffee!</h1>
-			<p>Send me a message at <a href="mailto:hello@your-email.com">hello@your-email.com</a>, or use the form below.</p>
-			<!-- NOTE: The URL below is for testing purposes. Don't forget to replace it with your own form! -->
-			<iframe width="100%" height="500px" frameborder="0" src="https://docs.google.com/forms/d/e/1FAIpQLSfG_0hMXBMpltL2Tv78tKlL_aCSjsmwPSCT7lfznnQ_Mpaj4g/viewform" />
+		<main >
+			<h1 id="headline">צור קשר</h1>
+			<div class="form">
+				<form>
+					<b id="keep">שמרו על קשר</b> <br>
+					<br><label for="fullname" >:שם מלא</label><br>
+					<input type="text" id="fullname" name="fullname"><br>
+					<br><label for="email">:דוא"ל</label><br>
+					<input type="email" id="email" placeholder="name@example.com"><br>
+					<br> <label for="message">:הודעה</label><br>
+					<textarea type="message" id="message" placeholder="השאר הודעה כאן" ></textarea><br>
+					<br><button type="button" class="btn btn-outline-primary">שלח</button>
+
+				</form>
+                              <br>
+                              <br>
+                              <br>
+                              <br>
+                              <br>
+			                  <br>
+			</div>
 		</main>
 
 		<!-- page footer -->

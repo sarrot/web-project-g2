@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+*{box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+}
+
+:root{--boldPeach:#bf6d50
+}
+
+body{
+      text-align: center;
+}
+
+h1{
+  /*margin-right: 50px;*/
+  font-size: 5vw;
+  margin: 0px;
+  padding-right: 5%;
+}
+
+h2 {
+  font-size: 4vw;
+  direction: rtl;  /* Right to Left */
+  padding: 0 100px;
+  margin: 0;
+}
+
+/*HEDAER AND NAV
+----------------------------------------------*/
+
+.navlink{
+  padding: 0 20px;
+  margin: 0;
+  color: var(--boldPeach);
+  text-decoration: none; /* removes default underline */
+  font-size:2.5vw;
+}
+
+/*when typing nav button */
+a.navlink:hover {
+  background: peachpuff;
+}
+
+header {
+    direction: rtl;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+
+
+}
+
+.highlight {
+  color: var(--boldPeach);
+}
+
+#headline{
+      text-align: center;
+}
+main {
+  background: #ecab94;
+  width: 100%;
+  margin-top: 10%;
+
+}
+
+/* REGISTER+LOGIN STYLES
+---------------------------------------*/
+
+
+
+form {
+   display: inline-block;
+  background-color: antiquewhite;
+  border: 3px solid #f1f1f1;
+  width: 40%;
+  font-size: 1.5vw;
+
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] ,input[type=email], textarea[type=message]{
+   direction: rtl;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+}
+
+/* Set a style for all buttons */
+button {
+  background-color:var(--boldPeach);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.5vw;
+
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+#keep{
+  float: right;
+  font-size:1.8vw ;
+}
