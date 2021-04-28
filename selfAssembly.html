@@ -4,10 +4,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>תותי פרוטי- פלטת פירות</title>
-		<link rel="stylesheet" href="css/final.css">
+		<link rel="stylesheet" href="css/selfAssemblyStyle.css">
 		<link rel="shortcut icon" href="imageProject/painapple.jpg">
 	</head>
 	<body>
+
 		<!-- Header & Nav -->
 		<header>
 			<!-- Navigation links -->
@@ -31,71 +32,105 @@
 				</b>
 				</div>
 		</header>
+		<main>
+<section id="sizes" >
+	<div>
+<h1 class="choice">:גודל מגש רצוי</h1>
+	<h2> :מגשים מרובעים</h2>
+	<b>  <button class="sizeB">   20X30 </button> </b>
+	<b>  <button class="sizeB">   30X30 </button> </b>
+	<b>  <button class="sizeB">   40X30 </button> </b>
+
+    <h2> :מגשים עגולים</h2>
+    <b>  <button class="sizeB">   25X25 </button> </b>
+	<b>  <button class="sizeB">   35X35 </button> </b>
+	<b>  <button class="sizeB">   45X45 </button> </b>
+		</div>
+</section>
 
 
+<section id="photos" class="choices">
+  <h1 class="choice">:פירות לבחירה</h1>
+	<h2> :פירות בסיס</h2>
+     <div class="images_buttons">
+		<a style="background-image:url(afarsek.jpg)" alt="אפרסק">
+		<span>אפרסק</span>
+		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
+		</a>
+		<a style="background-image:url(imageProject/anavim.jpg)" alt="ענבים">
+		<span>ענבים</span>
+		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
+		</a>
+		<a style="background-image:url(imageProject/avatiah.jpg)" alt="אבטיח">
+		<span>אבטיח</span>
+		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
+		</a>
+		<a style="background-image:url(imageProject/kiwi.jpg)" alt="קיוי">
+		<span>קיוי</span>
+		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
+		</a>
+		<a style="background-image:url(imageProject/melon.jpg)" alt="מלון">
+		<span>מלון</span>
+		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
+		</a>
+		 <a style="background-image:url(imageProject/mishmesh.jpg)" alt="משמש">
+		<span>משמש</span>
+		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
+		</a>
+		 <a style="background-image:url(imageProject/nectarina.jpg)" alt="נקטרינה">
+		<span>נקטרינה</span>
+		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
+		</a>
+		<a style="background-image:url(imageProject/shezifim.jpg)" alt="שזיף">
+		<span>שזיף</span>
+		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
+		</a>
+		<a style="background-image:url(imageProject/teenim.jpg)" alt="תאנים">
+		<span>תאנים</span>
+		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
+		</a>
+</div>
 
 
-    <span class="item1">
-      <img src="imageProject/afarsek.jpg" >
-     <figcaption>אפרסק</figcaption>
-  </span>
-  <span class="item1" >
-   <img src="imageProject/ananas.jpg" >
-     <figcaption>אננס</figcaption>
-   </span>
-  <span class="item1">
-   <img src="imageProject/anavim.jpg" >
-    <figcaption>ענבים</figcaption>
-  </span>
-
-
-
-
-
-
-
-
-
-
-
-<!--<figure class="fruit">  <img src="imageProject/afarsek.jpg" >-->
-<!--<figcaption>אפרסק</figcaption></figure> -->
-<!--<figure class="fruit" class="fruit"><img src="imageProject/ananas.jpg" >  -->
-<!--<figcaption>אננס</figcaption></figure>-->
-<!--<figure class="fruit" class="fruit"> <img src="imageProject/anavim.jpg" >-->
-<!--<figcaption>ענבים</figcaption> </figure>-->
-<!--<figure class="fruit"> <img src="imageProject/avatiah.jpg" >-->
-<!--<figcaption>אבטיח</figcaption> </figure>-->
-<!--<figure class="fruit"> <img src="imageProject/duvdevan.jpg" >-->
-<!--<figcaption>דובדבנים</figcaption></figure>-->
-<!--<figure class="fruit"> <img src="imageProject/karambola.jpg" >-->
-<!--<figcaption>קרמבולה</figcaption></figure>-->
-<!--<figure class="fruit"> <img src="imageProject/kiwi.jpg" >-->
-<!--<figcaption>קיוי</figcaption></figure>-->
-<!--<figure class="fruit"> <img src="imageProject/lychee-temp.jpg" >-->
-<!--<figcaption>ליצ'י</figcaption></figure>-->
-<!--<figure class="fruit"> <img src="imageProject/melon.jpg" >-->
-<!--<figcaption>מלון</figcaption></figure>-->
-<!--<figure class="fruit"> <img src="imageProject/mishmesh.jpg" >-->
-<!--<figcaption>משמש</figcaption></figure>-->
-<!--<figure class="fruit"> <img src="imageProject/nectarina.jpg" >-->
-<!--<figcaption>נקטרינה</figcaption> </figure>-->
-<!--<figure class="fruit"> <img src="imageProject/ohmaniot.jpg" >-->
-<!--<figcaption>אוכמניות</figcaption></figure>-->
-<!--<figure class="fruit"> <img src="imageProject/pasiflora.jpg" >-->
-<!--<figcaption>פסיפלורה</figcaption></figure>-->
-<!--<figure class="fruit"> <img src="imageProject/petel.jpg" >-->
-<!--<figcaption>פטל</figcaption></figure>-->
-<!--<figure class="fruit"> <img src="imageProject/sabre.jpg" >-->
-<!--<figcaption>סברס</figcaption></figure>-->
-<!--<figure class="fruit"> <img src="imageProject/shezifim.jpg" >-->
-<!--<figcaption>שזיף</figcaption></figure>-->
-<!--<figure class="fruit"> <img src="imageProject/teenim.jpg" >-->
-<!--<figcaption>תאנים</figcaption></figure>-->
-
-
-<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים">
-</input>
-
+	<h2> :פירות מיוחדים</h2>
+     <div class="images_buttons">
+		<a style="background-image:url(imageProject/ananas.jpg)" alt="singapore">
+		<span>אננס</span>
+		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"> </input>
+		</a>
+        <a style="background-image:url(imageProject/duvdevan.jpg)" alt="דובדבנים">
+		<span>דובדבנים</span>
+		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"> </input>
+		</a>
+		<a style="background-image:url(imageProject/karambola.jpg)" alt="קרמבולה">
+		<span>קרמבולה</span>
+		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"> </input>
+		</a>
+		<a style="background-image:url(imageProject/lychee-temp.jpg)" alt="ליצ'י">
+		<span>ליצ'י</span>
+		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"> </input>
+		</a>
+		 <a style="background-image:url(imageProject/ohmaniot.jpg)" alt="אוכמניות">
+		<span>אוכמניות</span>
+	    <input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"> </input>
+		 </a>
+		<a style="background-image:url(imageProject/pasiflora.jpg)" alt="פסיפלורה">
+		<span>פסיפלורה</span>
+		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"> </input>
+		</a>
+		<a style="background-image:url(imageProject/petel.jpg)" alt="פטל">
+		<span>פטל</span>
+		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"> </input>
+        </a>
+		<a style="background-image:url(imageProject/sabre.jpg)" alt="סברס">
+		<span>סברס</span>
+		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"> </input>
+        </a>
+</div>
+</section>
+		</main>
+		<footer>
+		<div class="phone">   דברו איתנו:  0547252305</div>
+		</footer>
 </body>
 </html>
