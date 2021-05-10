@@ -6,24 +6,24 @@
 		<title>תותי פרוטי- פלטת פירות</title>
 		<link rel="stylesheet" href="css/selfAssemblyStyle.css">
 		<link rel="shortcut icon" href="imageProject/painapple.jpg">
+		<script src="JS/assemblyJS.js">  </script>
 	</head>
-	<body>
+	<body onload="text()">
 
 		<!-- Header & Nav -->
 		<header>
 			<!-- Navigation links -->
 
 			<nav id="nava">
-				<h1><span class="highlight">תותי</span>פרותי</h1>
+				<h1 id="tuti" ><span class="highlight">תותי</span> פרוטי<img src="imageProject/strTitle.jpeg" style="height:5vw"></h1>
+				<div>
 				<b>
-				<a class="navlink" href="index.html">בית</a>
-				<a class="navlink" href="selfAssembly.html">הרכבה עצמית</a>
-				<a class="navlink" href="season.html">מגשי העונה</a>
-				<a class="navlink" href="index.html/contact">צור קשר</a>
-				<a class="navlink" href="shoppingcart.html">סל קניות</a>
+			<a class="navlink" id = "home" href="index.html">בית</a>
+					<a class="navlink" href="selfAssembly.html">הרכבה עצמית</a>
+					<a class="navlink" href="shoppingcart.html">סל קניות</a>
+					<a class="navlink" href="contact.html">צור קשר</a>
 				</b>
 				</div>
-
 			</nav>
 				<div>
 				<b>
@@ -33,104 +33,132 @@
 				</div>
 		</header>
 		<main>
-<section id="sizes" >
-	<div>
-<h1 class="choice">:גודל מגש רצוי</h1>
-	<h2> :מגשים מרובעים</h2>
-	<b>  <button class="sizeB">   20X30 </button> </b>
-	<b>  <button class="sizeB">   30X30 </button> </b>
-	<b>  <button class="sizeB">   40X30 </button> </b>
+			<div id="text" >  </div>
 
-    <h2> :מגשים עגולים</h2>
-    <b>  <button class="sizeB">   25X25 </button> </b>
-	<b>  <button class="sizeB">   35X35 </button> </b>
-	<b>  <button class="sizeB">   45X45 </button> </b>
-		</div>
-</section>
+			<section id="sizes" class="choices">
 
+					<h1 class="choice">:גודל מגש רצוי</h1>
+					<h2> :מגשים מרובעים</h2>
+					<div class="tray">
+						<a>
+					  		<button class="sizeA"> <b>20X30</b> </button>
+							<span>2 סועדים</span>
+						</a>
+						<a>
+							<button class="sizeA"> <b>30X30</b> </button>
+							<span>4 סועדים</span>
+						</a>
+						<a>
+							<button class="sizeA"> <b>40X30</b> </button>
+							<span>8 סועדים</span>
+						</a>
+					</div>
+    				<h2> :מגשים עגולים</h2>
+					<div class="tray">
+						<a>
+							<button class="sizeB"> <b>25X25</b> </button>
+							<span>2 סועדים</span>
+						</a>
+    				  	<a>
+							<button class="sizeB"> <b>35X35</b> </button>
+							<span>4 סועדים</span>
+						</a>
+					  	<a>
+							<button class="sizeB"> <b>45X45</b> </button>
+							<span>8 סועדים</span>
+						</a>
+					</div>
+			</section>
+			<section id="photos" class="choices">
+  				<h1 class="choice">:פירות לבחירה</h1>
+				<h2> :פירות בסיס</h2>
+				<div class="images_buttons">
+					<a style="background-image:url(imageProject/afarsek.jpg)" alt="afarsek">
+						<span>אפרסק</span>
+						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="afarsek" value="afarsek"></input>
+					</a>
+					<a style="background-image:url(imageProject/anavim.jpg)" alt="anavim">
+						<span>ענבים</span>
+						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="anavim" value="anavim"></input>
+					</a>
+					<a style="background-image:url(imageProject/avatiah.jpg)" alt="avatiah">
+						<span>אבטיח</span>
+						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="avatiah" value="avatiah"></input>
+					</a>
+					<a style="background-image:url(imageProject/kiwi.jpg)" alt="kiwi">
+						<span>קיוי</span>
+						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="kiwi" value="kiwi"></input>
+					</a>
+					<a style="background-image:url(imageProject/melon.jpg)" alt="melon">
+						<span>מלון</span>
+						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="melon" value="melon"></input>
+					</a>
+		 			<a style="background-image:url(imageProject/mishmesh.jpg)" alt="mishmesh">
+						<span>משמש</span>
+						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="mishmesh" value="mishmesh"></input>
+					</a>
+		 			<a style="background-image:url(imageProject/nectarina.jpg)" alt="nectarina">
+						<span>נקטרינה</span>
+						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="nectarina" value="nectarina"></input>
+					</a>
+					<a style="background-image:url(imageProject/shezifim.jpg)" alt="shezifim">
+						<span>שזיף</span>
+						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="shezifim" value="shezifim"></input>
+					</a>
+					<a style="background-image:url(imageProject/teenim.jpg)" alt="teenim">
+						<span>תאנים</span>
+						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="teenim" value="teenim"></input>
+					</a>
+				</div>
+				<br>
 
-<section id="photos" class="choices">
-  <h1 class="choice">:פירות לבחירה</h1>
-	<h2> :פירות בסיס</h2>
-     <div class="images_buttons">
-		<a style="background-image:url(afarsek.jpg)" alt="אפרסק">
-		<span>אפרסק</span>
-		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
-		</a>
-		<a style="background-image:url(imageProject/anavim.jpg)" alt="ענבים">
-		<span>ענבים</span>
-		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
-		</a>
-		<a style="background-image:url(imageProject/avatiah.jpg)" alt="אבטיח">
-		<span>אבטיח</span>
-		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
-		</a>
-		<a style="background-image:url(imageProject/kiwi.jpg)" alt="קיוי">
-		<span>קיוי</span>
-		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
-		</a>
-		<a style="background-image:url(imageProject/melon.jpg)" alt="מלון">
-		<span>מלון</span>
-		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
-		</a>
-		 <a style="background-image:url(imageProject/mishmesh.jpg)" alt="משמש">
-		<span>משמש</span>
-		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
-		</a>
-		 <a style="background-image:url(imageProject/nectarina.jpg)" alt="נקטרינה">
-		<span>נקטרינה</span>
-		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
-		</a>
-		<a style="background-image:url(imageProject/shezifim.jpg)" alt="שזיף">
-		<span>שזיף</span>
-		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
-		</a>
-		<a style="background-image:url(imageProject/teenim.jpg)" alt="תאנים">
-		<span>תאנים</span>
-		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"></input>
-		</a>
-</div>
+				<h2> :פירות מיוחדים</h2>
+     				<div class="images_buttons">
+						<a style="background-image:url(imageProject/ananas.jpg)" alt="ananas">
+							<span>אננס</span>
+							<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="ananas" value="ananas"> </input>
+						</a>
+        				<a style="background-image:url(imageProject/duvdevan.jpg)" alt="duvdevan">
+							<span>דובדבנים</span>
+							<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="duvdevan" value="duvdevan"> </input>
+						</a>
+						<a style="background-image:url(imageProject/karambola.jpg)" alt="karambola">
+							<span>קרמבולה</span>
+							<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="karambola" value="karambola"> </input>
+						</a>
+						<a style="background-image:url(imageProject/lychee-temp.jpg)" alt="lychee">
+							<span>ליצ'י</span>
+							<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="lychee" value="lychee"> </input>
+						</a>
+		 				<a style="background-image:url(imageProject/ohmaniot.jpg)" alt="ohmaniot">
+							<span>אוכמניות</span>
+	    					<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="ohmaniot" value="ohmaniot"> </input>
+		 				</a>
+						<a style="background-image:url(imageProject/pasiflora.jpg)" alt="pasiflora">
+							<span>פסיפלורה</span>
+							<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="pasiflora" value="pasiflora"> </input>
+						</a>
+						<a style="background-image:url(imageProject/petel.jpg)" alt="petel">
+							<span>פטל</span>
+							<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="petel" value="petel"> </input>
+        				</a>
+						<a style="background-image:url(imageProject/sabre.jpg)" alt="sabre">
+							<span>סברס</span>
+							<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="sabre" value="sabre"> </input>
+        				</a>
+					</div>
+					<br>
+					<br>
+					<br>
+						  <button id="cart">  <b>הוסף לעגלה</b>  </button>
+					<br>
+					<br>
+					<br>
 
-
-	<h2> :פירות מיוחדים</h2>
-     <div class="images_buttons">
-		<a style="background-image:url(imageProject/ananas.jpg)" alt="singapore">
-		<span>אננס</span>
-		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"> </input>
-		</a>
-        <a style="background-image:url(imageProject/duvdevan.jpg)" alt="דובדבנים">
-		<span>דובדבנים</span>
-		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"> </input>
-		</a>
-		<a style="background-image:url(imageProject/karambola.jpg)" alt="קרמבולה">
-		<span>קרמבולה</span>
-		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"> </input>
-		</a>
-		<a style="background-image:url(imageProject/lychee-temp.jpg)" alt="ליצ'י">
-		<span>ליצ'י</span>
-		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"> </input>
-		</a>
-		 <a style="background-image:url(imageProject/ohmaniot.jpg)" alt="אוכמניות">
-		<span>אוכמניות</span>
-	    <input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"> </input>
-		 </a>
-		<a style="background-image:url(imageProject/pasiflora.jpg)" alt="פסיפלורה">
-		<span>פסיפלורה</span>
-		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"> </input>
-		</a>
-		<a style="background-image:url(imageProject/petel.jpg)" alt="פטל">
-		<span>פטל</span>
-		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"> </input>
-        </a>
-		<a style="background-image:url(imageProject/sabre.jpg)" alt="סברס">
-		<span>סברס</span>
-		<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="customProductData[38][5][5][custom_checkbox2]" value="ענבים"> </input>
-        </a>
-</div>
-</section>
+				</section>
 		</main>
 		<footer>
-		<div class="phone">   דברו איתנו:  0547252305</div>
+		<a href="tel:+0547252304" style="color: black;text-decoration: none "> <b> <span class="highlight" id="talk" > דברו איתנו:  </span >  0547252304 </b> </a>
 		</footer>
 </body>
 </html>

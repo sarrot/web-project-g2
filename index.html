@@ -6,23 +6,24 @@
 		<title>תותי פרוטי- פלטת פירות</title>
 		<link rel="stylesheet" href="css/final.css">
 		<link rel="shortcut icon" href="imageProject/painapple.jpg">
+		<script src="./JS/modal.js"></script>
+
 	</head>
-	<body>
+	<body onload="text()">
 		<!-- Header & Nav -->
 		<header>
 			<!-- Navigation links -->
 
 			<nav id="nava">
-				<h1><span class="highlight">תותי</span>פרותי</h1>
-				<b>
-				<a class="navlink" href="index.html">בית</a>
-				<a class="navlink" href="selfAssembly.html">הרכבה עצמית</a>
-				<a class="navlink" href="season.html">מגשי העונה</a>
-				<a class="navlink" href="#contact">צור קשר</a>
-				<a class="navlink" href="shoppingcart.html">סל קניות</a>
+				<h1><span class="highlight">תותי</span> פרוטי<img src="imageProject/strTitle.jpeg" style="height:5vw"></h1>
+				<div>
+					<b>
+					<a class="navlink" id = "home" href="index.html">בית</a>
+					<a class="navlink" href="selfAssembly.html">הרכבה עצמית</a>
+					<a class="navlink" href="shoppingcart.html">סל קניות</a>
+					<a class="navlink" href="contact.html">צור קשר</a>
 				</b>
 				</div>
-
 			</nav>
 				<div>
 				<b>
@@ -32,45 +33,61 @@
 				</div>
 		</header>
 
+		<main>
 
-<main><h2 > מגשים ממולצים </h2>
+		<h2 ><div id="text" > </div> </h2>
      		<div class="images_buttons">
-				<a id="fruit5" style="background-image:url(imageProject/fruit5.jpg)"
+				<a id="fruit5" onclick="fruit5()" style="background-image:url(imageProject/fruit5.jpg)"
 					alt="fruit5">
 					<span>זוגי</span>
 				</a>
 
-        		<a id="fruit2" style="background-image:url(imageProject/fruit2.jpg)"
+        		<a id="fruit2" onclick="fruit2()" style="background-image:url(imageProject/fruit2.jpg)"
 					alt="fruit2">
 					<span>משפחתי</span>
 				</a>
 
-		 		<a id="fruit6" style="background-image:url(imageProject/plate2.jpg)"
+		 		<a id="fruit6" onclick="fruitp2()" style="background-image:url(imageProject/fruit20.jpeg)"
 					alt="fruit6">
 					<span>אקזוטי</span>
 				</a>
 
-				<a style="background-image:url(imageProject/plate1.jpg)"
+				<a onclick="fruitp1()" style="background-image:url(imageProject/plate1.jpg)"
 					alt="fruit1">
 					<span>מפנק</span>
 				</a>
 
-        		<a style="background-image:url(imageProject/plate3.jpg)"
+        		<a onclick="fruitp3()" style="background-image:url(imageProject/plate3.jpg)"
 					alt="fruit4">
 					<span>מרגש</span>
 				</a>
 
-		 		<a style="background-image:url(imageProject/plate4.jpg)"
+		 		<a onclick="fruitp4()" style="background-image:url(imageProject/plate4.jpg)"
 					alt="fruit3">
 					<span>מהפנט</span>
 				</a>
 			</div>
-			 </main>
+			<div id="id01" class="modal">
+				<form class="modal-content animate" >
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+						 <img id="modal_img" src="" alt="Avatar" class="avatar">
+					</div>
+					    <div class="container">
+							<p id = target>
+							</p>
+                            <button class="modalbutton">הוסף לסל</button>
+						</div>
+					<div class="container">
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="modalbutton"  id="cancelbtn">חזור</button>
+					</div>
+				</form>
+			</div>
+		</main>
 
 		<!-- Page footer -->
 		<footer>
-			<p>&#169; 2021 by <span class="highlight">Rotem</span>Sarusi</p>
+			<a href="tel:+0547252304" style="color: black;text-decoration: none "> <b> <span class="highlight" id="talk" > דברו איתנו:  </span >  0547252304 </b> </a>
 		</footer>
-
 	</body>
 </html>

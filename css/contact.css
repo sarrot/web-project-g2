@@ -11,7 +11,7 @@ body{
 }
 
 h1{
-  /*margin-right: 50px;*/
+
   font-size: 5vw;
   margin: 0px;
   padding-right: 5%;
@@ -28,11 +28,14 @@ h2 {
 ----------------------------------------------*/
 
 .navlink{
-  padding: 0 20px;
+  padding: 0 1vw;
   margin: 0;
   color: var(--boldPeach);
   text-decoration: none; /* removes default underline */
-  font-size:2.5vw;
+  font-size:3vw;
+}
+#home{
+  padding-right: 3vw;
 }
 
 /*when typing nav button */
@@ -41,7 +44,7 @@ a.navlink:hover {
 }
 
 header {
-    direction: rtl;
+  direction: rtl;
   width: 100%;
   background: white;
   display: flex;
@@ -51,48 +54,42 @@ header {
   overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-
-
 }
 
 .highlight {
   color: var(--boldPeach);
+  padding-right: 2vw;
 }
 
 #headline{
       text-align: center;
+      padding-left: 4vw;
 }
+
 main {
   background: #ecab94;
   width: 100%;
   margin-top: 10%;
-
 }
-
-/* REGISTER+LOGIN STYLES
----------------------------------------*/
-
-
 
 form {
    display: inline-block;
   background-color: antiquewhite;
   border: 3px solid #f1f1f1;
   width: 40%;
-  font-size: 1.5vw;
-
+  font-size: 2vw;
 }
 
 /* Full-width inputs */
 input[type=text], input[type=password] ,input[type=email], textarea[type=message]{
-   direction: rtl;
+  direction: rtl;
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
-
+  font-size: 1.5vw;
 }
 
 /* Set a style for all buttons */
@@ -104,8 +101,7 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
-  font-size: 1.5vw;
-
+  font-size: 2vw;
 }
 
 /* Add a hover effect for buttons */
@@ -114,6 +110,38 @@ button:hover {
 }
 
 #keep{
-  float: right;
   font-size:1.8vw ;
+}
+
+#footerT{
+  font-size: 3vw;
+}
+@media only screen and (max-width: 758px) {
+  .h1{
+    font-size: 10vw;
+  }
+ .navlink {
+   font-size:5vw;
+ }
+ input[type=text], input[type=password] ,input[type=email], textarea[type=message]{
+  font-size: 3vw;
+}
+ label[for=fullname], label[for=email], label[for=message]{
+   font-size: 5vw;
+ }
+#headline{
+  padding-top: 5vw;
+}
+ .form {
+  font-size: 5vw;
+}
+ #keep{
+   font-size: 5vw;
+ }
+ button[type=button]{
+   font-size: 5vw;
+ }
+}
+footer{
+    font-size: 3vw;
 }

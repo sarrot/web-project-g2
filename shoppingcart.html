@@ -4,21 +4,21 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>תותיפרוטי</title>
-		<script src="cartJS.js ">  </script>
+		<script src="JS/cartJS.js ">  </script>
 		<link rel="stylesheet" href="css/cartStyle.css">
 		<link rel="shortcut icon" href="imageProject/painapple.jpg">
 	</head>
-	<body onload="text()">
+	<body onload="text()">  <!-- המשפט המופיע בפתיחת הדף -->
 		<!-- Header & Nav -->
 		<header>
 			<!-- Navigation links -->
 			<nav id="nava">
-				<h1><span class="highlight">תותי</span>פרוטי</h1>
+					<h1><span class="highlight">תותי</span> פרוטי<img src="imageProject/strTitle.jpeg" style="height:5vw"></h1>
 				<b>
-				<a class="navlink " id="home" href="index.html">בית</a>
-				<a class="navlink" href="selfAssembly.html">הרכבה עצמית</a>
-				<a class="navlink" href="shoppingcart.html">סל קניות</a>
-				<a class="navlink" href="index.html/contact">צור קשר</a>
+				<a class="navlink" id = "home" href="index.html">בית</a>
+					<a class="navlink" href="selfAssembly.html">הרכבה עצמית</a>
+					<a class="navlink" href="shoppingcart.html">סל קניות</a>
+					<a class="navlink" href="contact.html">צור קשר</a>
 				</b>
 				</div>
 
@@ -35,7 +35,7 @@
 				<h1 class="cart" >סל הקניות שלך</h1>
 				<div id="text" >  </div>
 			</section>
-
+             <!-- המוצר הנבחר הראשון -->
  			<section  class="product" id="product1">
      			<button class="remove-product" onclick="remove1() "><b> מחק פריט מהרשימה</b> </button>
      			<input class="product-quantity" type="number" value="1" min="1">
@@ -43,7 +43,7 @@
      				<h3 class="product-name">   פלטה משפחתית </h3>
      				<img class="pic" src="imageProject/fruit2.jpg">
  			</section>
-
+                 <!-- המוצר הנבחר השני -->
   			<section class="product" id="product2">
 				<hr class="line" >
      			<button class="remove-product" onclick="remove2()"><b> מחק פריט מהרשימה</b> </button>
@@ -52,7 +52,7 @@
      				<h3 class="product-name">   פלטה זוגית </h3>
      				<img class="pic" src="imageProject/fruit4.jpg">
  			</section>
-
+                 <!-- סיכום הזמנה -->
   			<section class="totals">
       		 <hr class="line">
       			<h3 class="tot"> :סך הכל לתשלום</h3>

@@ -1,26 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 *{box-sizing: border-box;
     font-family: 'Amatic SC', cursive;
-
 }
-
 :root{
     --boldPeach:#bf6d50;
     --brightPeach: rgba(248, 199, 178, 0.81);
 }
-
 body{
       text-align: center;
       padding-top: 10%;
 }
-
 h1{
-  /*margin-right: 50px;*/
   font-size: 5vw;
   margin: 0px;
   padding-right: 5%;
 }
-
 h2 {
   font-size: 4vw;
   direction: rtl;  /* Right to Left */
@@ -44,7 +38,7 @@ a.navlink:hover {
   background: peachpuff;
 }
 
-header {
+header{
   direction: rtl;
   width: 100%;
   background: white;
@@ -68,14 +62,12 @@ header {
 #home{
     padding-right: 3vw;
 }
-/*     shopping cart   */
+/*     shopping cart
+ ------------------------------------*/
+
 .cart{
 background-color:var(--brightPeach) ;
  }
-
-/*.main{*/
-/*    width:95%;*/
-/*}*/
 
 .product{
    margin:5%;
