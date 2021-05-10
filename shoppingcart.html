@@ -4,22 +4,21 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>תותיפרוטי</title>
-		<link rel="stylesheet" href="css/final.css">
+		<script src="cartJS.js ">  </script>
+		<link rel="stylesheet" href="css/cartStyle.css">
 		<link rel="shortcut icon" href="imageProject/painapple.jpg">
 	</head>
-	<body>
+	<body onload="text()">
 		<!-- Header & Nav -->
 		<header>
 			<!-- Navigation links -->
-
 			<nav id="nava">
-				<h1><span class="highlight">תותי</span>פרותי</h1>
+				<h1><span class="highlight">תותי</span>פרוטי</h1>
 				<b>
-				<a class="navlink" href="index.html">בית</a>
-				<a class="navlink" href="about.html">הרכבה עצמית</a>
-				<a class="navlink" href="season.html">מגשי העונה</a>
-				<a class="navlink" href="contact.html">צור קשר</a>
+				<a class="navlink " id="home" href="index.html">בית</a>
+				<a class="navlink" href="selfAssembly.html">הרכבה עצמית</a>
 				<a class="navlink" href="shoppingcart.html">סל קניות</a>
+				<a class="navlink" href="index.html/contact">צור קשר</a>
 				</b>
 				</div>
 
@@ -31,6 +30,37 @@
 				</b>
 				</div>
 		</header>
+		<main>
+			<section>
+				<h1 class="cart" >סל הקניות שלך</h1>
+				<div id="text" >  </div>
+			</section>
+
+ 			<section  class="product" id="product1">
+     			<button class="remove-product" onclick="remove1() "><b> מחק פריט מהרשימה</b> </button>
+     			<input class="product-quantity" type="number" value="1" min="1">
+				<div class="product-price">350 ש"ח</div>
+     				<h3 class="product-name">   פלטה משפחתית </h3>
+     				<img class="pic" src="imageProject/fruit2.jpg">
+ 			</section>
+
+  			<section class="product" id="product2">
+				<hr class="line" >
+     			<button class="remove-product" onclick="remove2()"><b> מחק פריט מהרשימה</b> </button>
+     			<input class="product-quantity" type="number" value="1" min="1">
+				<div class="product-price">250 ש"ח</div>
+     				<h3 class="product-name">   פלטה זוגית </h3>
+     				<img class="pic" src="imageProject/fruit4.jpg">
+ 			</section>
+
+  			<section class="totals">
+      		 <hr class="line">
+      			<h3 class="tot"> :סך הכל לתשלום</h3>
+      			<div class="totals-price" >600 ש"ח</div>
+      			<button class="send" > שלח הזמנה </button>
+			</section>
+
+    </main>
 
 </body>
 </html>
