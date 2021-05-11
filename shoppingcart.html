@@ -13,14 +13,14 @@
 		<header>
 			<!-- Navigation links -->
 			<nav id="nava">
-					<h1><span class="highlight">תותי</span> פרוטי<img src="imageProject/strTitle.jpeg" style="height:5vw"></h1>
+					<h1><span class="highlight">תותי</span> פרוטי<img src="imageProject/strTitle.jpeg" alt="totPic" style="height:5vw"></h1>
 				<b>
 				<a class="navlink" id = "home" href="index.html">בית</a>
 					<a class="navlink" href="selfAssembly.html">הרכבה עצמית</a>
 					<a class="navlink" href="shoppingcart.html">סל קניות</a>
 					<a class="navlink" href="contact.html">צור קשר</a>
 				</b>
-				</div>
+
 
 			</nav>
 				<div>
@@ -38,26 +38,28 @@
              <!-- המוצר הנבחר הראשון -->
  			<section  class="product" id="product1">
      			<button class="remove-product" onclick="remove1() "><b> מחק פריט מהרשימה</b> </button>
-     			<input class="product-quantity" type="number" value="1" min="1">
+				<label for="name"> </label>
+     			<input class="product-quantity"  id="name" type="number" value="1" min="1">
 				<div class="product-price">350 ש"ח</div>
-     				<h3 class="product-name">   פלטה משפחתית </h3>
-     				<img class="pic" src="imageProject/fruit2.jpg">
+     				<h3 class="product-name"> פלטה משפחתית </h3>
+     				<img class="pic" src="imageProject/fruit2.jpg" alt="פלטה משפחתית">
  			</section>
                  <!-- המוצר הנבחר השני -->
   			<section class="product" id="product2">
 				<hr class="line" >
      			<button class="remove-product" onclick="remove2()"><b> מחק פריט מהרשימה</b> </button>
-     			<input class="product-quantity" type="number" value="1" min="1">
+				<label for="Pname"> </label>
+     			<input class="product-quantity" id="Pname" type="number"  value="1" min="1">
 				<div class="product-price">250 ש"ח</div>
-     				<h3 class="product-name">   פלטה זוגית </h3>
-     				<img class="pic" src="imageProject/fruit4.jpg">
+     				<h3 class="product-name"> פלטה בהרכבה עצמית </h3>
+     				<img class="pic" id="assembly" src="imageProject/fruit4.jpg" alt="הרכבה עצמית">
  			</section>
                  <!-- סיכום הזמנה -->
   			<section class="totals">
       		 <hr class="line">
       			<h3 class="tot"> :סך הכל לתשלום</h3>
       			<div class="totals-price" >600 ש"ח</div>
-      			<button class="send" > שלח הזמנה </button>
+      			<button onclick="window.location.href='payment.html'"  class="send" > שלח הזמנה </button>
 			</section>
 
     </main>

@@ -11,3 +11,16 @@ function text() {
     }
 
 }
+
+
+function chosen(element) {
+    document.getElementById("size1").style.backgroundColor ='white';
+    document.getElementById("size2").style.backgroundColor ='white';
+    document.getElementById("size3").style.backgroundColor ='white';
+    document.getElementById("size4").style.backgroundColor ='white';
+    document.getElementById("size5").style.backgroundColor ='white';
+    document.getElementById("size6").style.backgroundColor ='white';
+    element.style.backgroundColor ='dimgray';
+}
+
+

@@ -12,7 +12,7 @@ body{
 }
 h1{
   font-size: 5vw;
-  margin: 0px;
+  margin: 0;
   padding-right: 5%;
 }
 h2 {
@@ -73,14 +73,14 @@ background-color:var(--brightPeach) ;
    margin:5%;
    /*width: 100%;*/
    padding: 5%;
-   margin-top: 0%;
+   margin-top: 0;
 }
 .remove-product{
-    width:10%;
+    width:18%;
     float:left;
     margin: 5%;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 2vw;
 }
 .product-quantity{
     width:5%;
@@ -111,10 +111,6 @@ background-color:var(--brightPeach) ;
 }
 .totals-value{
     width: 50%;
-
-}
-.checkout{
- font-size: 3vw;
 }
 .totals{
     width:100%;
@@ -145,10 +141,6 @@ margin-right: 10%;
   margin-top: 4%;
  }
 
-
-#callUs{
-    font-size: 1vw;
-}
 .line{
    height:0.2vw;
     border-width:0;
@@ -179,4 +171,40 @@ margin-right: 10%;
  .remove-product{
     font-size: 2vw;
 }
+ #text{
+    font-size: 4vw;
+}
+.send{
+  font-size: 3vw;
+  width: 30%;
+    margin-bottom: 5vw;
+}
+
+.tot ,.totals-price{
+    width:40%;
+    font-size: 4vw;
+}
+
+.product-name {
+    width: 22%;
+    font-size: 3vw;
+}
+.remove-product{
+
+     font-size: 3vw;
+}
+.product-quantity{
+     font-size: 2vw;
+    width: 10%;
+    margin-left: 2%;
+
+}
+.product-price{
+     font-size: 3vw;
+    width: 10%;
+}
+    hr{
+        margin: 10%;
+    }
+
 }

@@ -123,9 +123,9 @@ body{
 }
 
 .images_buttons a:hover {
-	transform: scale(1.2);
-	cursor:pointer;
-	box-shadow: 7px 6px 5px var(--boldPeach);
+	/*transform: scale(1.2);*/
+	/*cursor:pointer;*/
+	/*box-shadow: 7px 6px 5px var(--boldPeach);*/
 }
 
 .images_buttons a:hover span {
@@ -149,7 +149,7 @@ main {
 	width: 100%;
 }
 h1{
-  	margin: 0px;
+  	margin: 0;
 	text-align:right;
 }
 
@@ -180,6 +180,7 @@ h3{
 	font-size: 2.5vw;
 	float: right;
 	border-radius: 10%;
+	padding: 1vw;
 }
 
 footer {
@@ -191,6 +192,7 @@ footer {
   width: 100%;
  font-size: 3vw;
 }
+
 
 @media only screen and (max-width: 500px) { /*for mobile*/
 	.navlink{

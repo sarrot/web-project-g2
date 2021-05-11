@@ -15,7 +15,7 @@
 			<!-- Navigation links -->
 
 			<nav id="nava">
-				<h1 id="tuti" ><span class="highlight">תותי</span> פרוטי<img src="imageProject/strTitle.jpeg" style="height:5vw"></h1>
+				<h1 id="tuti" ><span class="highlight">תותי</span> פרוטי<img src="imageProject/strTitle.jpeg"  alt="totPic" style="height:5vw"></h1>
 				<div>
 				<b>
 			<a class="navlink" id = "home" href="index.html">בית</a>
@@ -41,30 +41,30 @@
 					<h2> :מגשים מרובעים</h2>
 					<div class="tray">
 						<a>
-					  		<button class="sizeA"> <b>20X30</b> </button>
+					  		<button  onclick="chosen(this)" class="sizeA" id="size1"> <b>20X30</b> </button>
 							<span>2 סועדים</span>
 						</a>
 						<a>
-							<button class="sizeA"> <b>30X30</b> </button>
+							<button onclick="chosen(this)" class="sizeA" id="size2"> <b>30X30</b> </button>
 							<span>4 סועדים</span>
 						</a>
 						<a>
-							<button class="sizeA"> <b>40X30</b> </button>
+							<button onclick="chosen(this)" class="sizeA" id="size3"> <b>40X30</b> </button>
 							<span>8 סועדים</span>
 						</a>
 					</div>
     				<h2> :מגשים עגולים</h2>
 					<div class="tray">
 						<a>
-							<button class="sizeB"> <b>25X25</b> </button>
+							<button onclick="chosen(this)" class="sizeB" id="size4"> <b>25X25</b> </button>
 							<span>2 סועדים</span>
 						</a>
     				  	<a>
-							<button class="sizeB"> <b>35X35</b> </button>
+							<button onclick="chosen(this)" class="sizeB" id="size5"> <b>35X35</b> </button>
 							<span>4 סועדים</span>
 						</a>
 					  	<a>
-							<button class="sizeB"> <b>45X45</b> </button>
+							<button onclick="chosen(this)" class="sizeB" id="size6"> <b>45X45</b> </button>
 							<span>8 סועדים</span>
 						</a>
 					</div>
@@ -73,84 +73,85 @@
   				<h1 class="choice">:פירות לבחירה</h1>
 				<h2> :פירות בסיס</h2>
 				<div class="images_buttons">
-					<a style="background-image:url(imageProject/afarsek.jpg)" alt="afarsek">
+					<a style="background-image:url(imageProject/afarsek.jpg)" >
 						<span>אפרסק</span>
-						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="afarsek" value="afarsek"></input>
+						<input class="checkbox" id="cafarsek" type="checkbox" name="afarsek" value="afarsek" >
 					</a>
-					<a style="background-image:url(imageProject/anavim.jpg)" alt="anavim">
+					<a style="background-image:url(imageProject/anavim.jpg)" >
 						<span>ענבים</span>
-						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="anavim" value="anavim"></input>
+						<input class="checkbox"  type="checkbox" name="anavim" value="anavim">
 					</a>
-					<a style="background-image:url(imageProject/avatiah.jpg)" alt="avatiah">
+					<a style="background-image:url(imageProject/avatiah.jpg)">
 						<span>אבטיח</span>
-						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="avatiah" value="avatiah"></input>
+						<input class="checkbox"  type="checkbox" name="avatiah" value="avatiah">
 					</a>
-					<a style="background-image:url(imageProject/kiwi.jpg)" alt="kiwi">
+					<a style="background-image:url(imageProject/kiwi.jpg)" >
 						<span>קיוי</span>
-						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="kiwi" value="kiwi"></input>
+						<input class="checkbox" type="checkbox" name="kiwi" value="kiwi">
 					</a>
-					<a style="background-image:url(imageProject/melon.jpg)" alt="melon">
+					<a style="background-image:url(imageProject/melon.jpg)" >
 						<span>מלון</span>
-						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="melon" value="melon"></input>
+						<input class="checkbox"  type="checkbox" name="melon" value="melon">
 					</a>
-		 			<a style="background-image:url(imageProject/mishmesh.jpg)" alt="mishmesh">
+		 			<a style="background-image:url(imageProject/mishmesh.jpg)" >
 						<span>משמש</span>
-						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="mishmesh" value="mishmesh"></input>
+						<input class="checkbox"  type="checkbox" name="mishmesh" value="mishmesh">
 					</a>
-		 			<a style="background-image:url(imageProject/nectarina.jpg)" alt="nectarina">
+		 			<a style="background-image:url(imageProject/nectarina.jpg)" >
 						<span>נקטרינה</span>
-						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="nectarina" value="nectarina"></input>
+						<input class="checkbox"  type="checkbox" name="nectarina" value="nectarina">
 					</a>
-					<a style="background-image:url(imageProject/shezifim.jpg)" alt="shezifim">
+					<a style="background-image:url(imageProject/shezifim.jpg)" >
 						<span>שזיף</span>
-						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="shezifim" value="shezifim"></input>
+						<input class="checkbox"  type="checkbox" name="shezifim" value="shezifim">
 					</a>
-					<a style="background-image:url(imageProject/teenim.jpg)" alt="teenim">
+					<a style="background-image:url(imageProject/teenim.jpg)" >
 						<span>תאנים</span>
-						<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="teenim" value="teenim"></input>
+						<input class="checkbox"  type="checkbox" name="teenim" value="teenim">
 					</a>
 				</div>
 				<br>
 
 				<h2> :פירות מיוחדים</h2>
      				<div class="images_buttons">
-						<a style="background-image:url(imageProject/ananas.jpg)" alt="ananas">
+						<a style="background-image:url(imageProject/ananas.jpg)" >
 							<span>אננס</span>
-							<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="ananas" value="ananas"> </input>
+							<input class="checkbox"  type="checkbox" name="ananas" value="ananas">
 						</a>
-        				<a style="background-image:url(imageProject/duvdevan.jpg)" alt="duvdevan">
+        				<a style="background-image:url(imageProject/duvdevan.jpg)" >
 							<span>דובדבנים</span>
-							<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="duvdevan" value="duvdevan"> </input>
+							<input class="checkbox"  type="checkbox" name="duvdevan" value="duvdevan">
 						</a>
-						<a style="background-image:url(imageProject/karambola.jpg)" alt="karambola">
+						<a style="background-image:url(imageProject/karambola.jpg)" >
 							<span>קרמבולה</span>
-							<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="karambola" value="karambola"> </input>
+							<input class="checkbox"  type="checkbox" name="karambola" value="karambola">
 						</a>
-						<a style="background-image:url(imageProject/lychee-temp.jpg)" alt="lychee">
+						<a style="background-image:url(imageProject/lychee-temp.jpg)" >
 							<span>ליצ'י</span>
-							<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="lychee" value="lychee"> </input>
+							<input class="checkbox"  type="checkbox" name="lychee" value="lychee">
 						</a>
-		 				<a style="background-image:url(imageProject/ohmaniot.jpg)" alt="ohmaniot">
+		 				<a style="background-image:url(imageProject/ohmaniot.jpg)" >
 							<span>אוכמניות</span>
-	    					<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="ohmaniot" value="ohmaniot"> </input>
+	    					<input class="checkbox"  type="checkbox" name="ohmaniot" value="ohmaniot">
 		 				</a>
-						<a style="background-image:url(imageProject/pasiflora.jpg)" alt="pasiflora">
+						<a style="background-image:url(imageProject/pasiflora.jpg)" >
 							<span>פסיפלורה</span>
-							<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="pasiflora" value="pasiflora"> </input>
+							<input class="checkbox"  type="checkbox" name="pasiflora" value="pasiflora">
 						</a>
-						<a style="background-image:url(imageProject/petel.jpg)" alt="petel">
+						<a style="background-image:url(imageProject/petel.jpg)" >
 							<span>פטל</span>
-							<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="petel" value="petel"> </input>
+							<input class="checkbox"  type="checkbox" name="petel" value="petel">
         				</a>
-						<a style="background-image:url(imageProject/sabre.jpg)" alt="sabre">
+						<a style="background-image:url(imageProject/sabre.jpg)" >
 							<span>סברס</span>
-							<input class="checkbox" onclick="checkboxPrice(this)" type="checkbox" name="sabre" value="sabre"> </input>
+							<input class="checkbox"  type="checkbox" name="sabre" value="sabre">
         				</a>
 					</div>
 					<br>
 					<br>
 					<br>
-						  <button id="cart">  <b>הוסף לעגלה</b>  </button>
+				          <h3 id="total">סה"כ עלות לפלטה : 0 ש"ח</h3>
+						  <button id="cart">  <b>הוסף לסל</b>  </button>
 					<br>
 					<br>
 					<br>
