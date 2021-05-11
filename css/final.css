@@ -246,6 +246,10 @@ button:hover {
   opacity: 0.8;
 }
 
+#fordate{
+    width: 100%;
+}
+
 @media only screen and (max-width: 758px) {
   .h1{
     font-size: 7vw;

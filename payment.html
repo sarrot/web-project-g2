@@ -34,10 +34,20 @@
 <main>
 
 	<section id="login" class="section" >
-		<br>
-		<br>
+		<h3>מלא פרטי משלוח</h3>
 		<form method="POST" enctype="multipart/form-data" action="/todo">
 			<div class="container">
+				<label for="address"><b class="register" id="address11" >כתובת הספקה </b></label>
+				<input type="text" placeholder="עיר,רחוב,מספר בית" name="address" id="address"  required autofocus />
+				<label for="fordate"> <b class="register"> בחר תאריך אספקה רצוי </b> </label>
+				<input type="date"  class="form-control" id="fordate" placeholder="MM/YY" required autofocus/>
+
+			</div>
+		</form>
+		<h3>הכנס את פרטי האשראי שלך</h3>
+		<form method="POST" enctype="multipart/form-data" action="/todo">
+			<div class="container">
+
 				<label for="cardNumber"><b class="register">מספר כרטיס</b></label>
 				<input type="text" placeholder="הכנס מספר כרטיס" name="cardNumber" id="cardNumber"  required autofocus />
 				<label for="date"> <b class="register"> תוקף </b> </label>
