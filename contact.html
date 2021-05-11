@@ -6,6 +6,7 @@
 		<title>תותי פרוטי-צור קשר</title>
 		<link rel="stylesheet" href="css/contact.css">
 		<link rel="shortcut icon" href="imageProject/painapple.jpg">
+		<script src="JS/validationJS.js"></script>
 	</head>
 	<body class="contact">
 		<!-- Header & Nav -->
@@ -29,16 +30,16 @@
 		</header>
 		<main >
 			<h1 id="headline">צור קשר</h1>
-			<div class="form">
-				<form>
+			<div class="form" >
+				<form action=" /todo">
 					<b id="keep">שמרו על קשר</b> <br>
 					<br><label for="fullname" >:שם מלא</label><br>
-					<input type="text" id="fullname" name="fullname"><br>
-					<br><label for="email">:דוא"ל</label><br>
-					<input type="email" id="email" placeholder="name@example.com"><br>
+					<input type="text" id="fullname" name="fullname" required><br>
+					<br><label for="email1">:דוא"ל</label><br>
+					<input type="email" id="email1" placeholder="name@example.com" required><br>
 					<br> <label for="message">:הודעה</label><br>
-					<textarea type="message" id="message" placeholder="השאר הודעה כאן" ></textarea><br>
-					<br><button type="button">שלח</button>
+					<textarea type="message" id="message" placeholder="השאר הודעה כאן" required></textarea><br>
+					<br><button type="submit">שלח</button>
 				</form>
                               <br>
                               <br>
