@@ -1,0 +1,79 @@
+
+body{
+      text-align: center;
+}
+
+#headline{
+      text-align: center;
+      padding-left: 4vw;
+}
+
+main {
+  background: #ecab94;
+  width: 100%;
+  margin-top: 10%;
+}
+
+form {
+   display: inline-block;
+  background-color: antiquewhite;
+  border: 3px solid #f1f1f1;
+  width: 40%;
+  font-size: 2vw;
+    font-weight: bold;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] ,input[type=email], textarea[type=message]{
+  direction: rtl;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1.5vw;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color:var(--boldPeach);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 2vw;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+#keep{
+  font-size:1.8vw ;
+}
+
+#footerT{
+  font-size: 3vw;
+}
+@media only screen and (max-width: 758px) {
+
+ input[type=text], input[type=password] ,input[type=email], textarea[type=message]{
+  font-size: 3vw;
+}
+ label[for=fullname], label[for=email], label[for=message]{
+   font-size: 5vw;
+ }
+ .form {
+  font-size: 5vw;
+}
+ #keep{
+   font-size: 5vw;
+ }
+ button[type=button]{
+   font-size: 5vw;
+ }
+}

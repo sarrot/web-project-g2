@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% set page_head_title = 'shoppingcart' %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('shoppingcart.static', filename='css/shoppingcart.css') }}"/>
+{% endblock %}
+
+{% block page_body_main %}
+    <main>
+            <section>
+				<h1 class="cart" >סל הקניות שלך</h1>
+				<div id="text" >  </div>
+			</section>
+             <!-- המוצר הנבחר הראשון -->
+ 			<section  class="product" id="product1">
+     			<button class="remove-product" onclick="remove1() "><b> מחק פריט מהרשימה</b> </button>
+				<label for="name"> </label>
+     			<input class="product-quantity"  id="name" type="number" value="1" min="1">
+				<div class="product-price">350 ש"ח</div>
+     				<h3 class="product-name"> פלטה משפחתית </h3>
+     				<img class="pic" src="{{url_for('homepage.static',filename='media/fruit2.jpg')}}" alt="פלטה משפחתית">
+ 			</section>
+                 <!-- המוצר הנבחר השני -->
+  			<section class="product" id="product2">
+				<hr class="line" >
+     			<button class="remove-product" onclick="remove2()"><b> מחק פריט מהרשימה</b> </button>
+				<label for="Pname"> </label>
+     			<input class="product-quantity" id="Pname" type="number"  value="1" min="1">
+				<div class="product-price">250 ש"ח</div>
+     				<h3 class="product-name"> פלטה בהרכבה עצמית </h3>
+     				<img class="pic" id="assembly" src="{{ url_for('homepage.static', filename='media/fruit5.jpg') }}" alt="הרכבה עצמית">
+ 			</section>
+                 <!-- סיכום הזמנה -->
+  			<section class="totals">
+      		 <hr class="line">
+      			<h3 class="tot"> :סך הכל לתשלום</h3>
+      			<div class="totals-price" >600 ש"ח</div>
+      			<button onclick="window.location.href='payment.html'"  class="send" > שלח הזמנה </button>
+			</section>
+
+    </main>
+{% endblock %}
+
+{% block page_body_footer %}{% endblock %}
+
+{% block page_body_js %}
+    <script src="{{ url_for('shoppingcart.static', filename='js/shoppingcart.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% set page_head_title = 'register' %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('register.static', filename='css/register.css') }}"/>
+{% endblock %}
+
+{% block page_body_main %}
+    <main>
+    <section id="register" class="section">
+			<br>
+		<form  method="POST" action="/insert_user" onsubmit="return validUS()">
+			<div class="container">
+				<h1>הרשמה</h1>
+				<p class ="register"> בבקשה מלא את כל השדות על מנת להירשם</p>
+				<hr>
+                <label  ><b class ="register">שם פרטי</b></label>
+				<input type="text" placeholder="הכנס שם" name="first_name"  required>
+                <label for="last_name"><b class ="register">שם משפחה</b></label>
+				<input type="text" placeholder="הכנס שם משפחה" name="last_name"  required>
+                <label for="email"><b class ="register">אימייל</b></label>
+				<input type="text" placeholder="הכנס אימייל" name="email" id="email" required>
+				<label for="psw"><b class="register">סיסמא</b></label>
+				<input type="password" placeholder="הכנס סיסמא" name="psw" id="psw" required>
+				<label  for="psw_repeat"><b class="register">חזור על הסיסמא</b></label>
+				<input type="password" placeholder="הכנס סיסמא בשנית" name="psw-repeat" id="psw_repeat" required>
+				<div class="clearfix">
+					<button type="submit"  class="signupbtn" >הרשמה</button>
+				</div>
+			</div>
+		</form>
+	<br>
+	<br>
+	</section>
+    </main>
+{% endblock %}
+
+{% block page_body_js %}
+    <script src="{{ url_for('register.static', filename='js/register.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% set page_head_title = 'Homepage' %}
+{%  block page_head_meta %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+{% endblock %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('homepage.static', filename='css/homepage.css') }}"/>
+{% endblock %}
+
+
+{% block page_body_main %}
+   <main >
+
+		<h2 id="text"> </h2>
+     		<div class="images_buttons">
+				<a id="fruit5" onclick="fruit5()"  style="background-image: url({{ url_for('homepage.static', filename='media/fruit5.jpg') }})">
+					<span>זוגי</span>
+				</a>
+
+        		<a id="fruit2" onclick="fruit2()" style="background-image: url({{url_for('homepage.static',filename='media/fruit2.jpg')}})">
+					<span>משפחתי</span>
+				</a>
+
+		 		<a id="fruit6" onclick="fruitp2()" style="background-image: url({{url_for('homepage.static',filename='media/fruit20.jpeg')}})">
+					<span>אקזוטי</span>
+				</a>
+
+				<a onclick="fruitp1()" style="background-image: url({{url_for('homepage.static',filename='media/plate1.jpg')}})">
+					<span>מפנק</span>
+				</a>
+
+        		<a onclick="fruitp3()" style="background-image: url({{url_for('homepage.static',filename='media/plate3.jpg')}})">
+					<span>מרגש</span>
+				</a>
+
+		 		<a onclick="fruitp4()" style="background-image: url({{url_for('homepage.static',filename='media/plate4.jpg')}})">
+					<span>מהפנט</span>
+				</a>
+			</div>
+			<div id="id01" class="modal">
+				<form class="modal-content animate" >
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+						 <img id="modal_img" src="" alt="Avatar" class="avatar">
+					</div>
+					    <div class="container">
+							<p id = target>
+							</p>
+                            <button class="modalbutton">הוסף לסל</button>
+						</div>
+					<div class="container">
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="modalbutton"  id="cancelbtn">חזור</button>
+					</div>
+				</form>
+			</div>
+		</main>
+
+{% endblock %}
+
+{% block page_body_js %}
+     <script src="{{ url_for('homepage.static', filename='js/homepage.js') }}"></script>
+{% endblock %}

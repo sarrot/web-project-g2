@@ -1,0 +1,13 @@
+footer {
+  text-align: center;
+  padding: 1px;
+  text-transform: lowercase;
+  position: -ms-device-fixed;
+  float: bottom;
+  width: 100%;
+  font-size: 3vw;
+}
+
+#talk{
+  font-size: 3vw;
+}
