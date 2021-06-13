@@ -6,7 +6,6 @@ window.onclick = function(event) {
 }
 
 function fruitp4() {
-    document.getElementById('id01').style.display='block'; // show the
     let par = mediaModal(); // check screen size
     let words ='<p>' +
                     par+ ':פלטה "מהפנט"- מרכיבים' +
@@ -17,8 +16,11 @@ function fruitp4() {
                     '<br>'+
                     'מחיר: 265 ש"ח' +
                 '</p>';
-    document.getElementById('modal_img').imgsrc= 'homepage/static/media/plate4.jpg';
+
+    document.getElementById('modal_img').src="/homepage/media/plate4.jpg";
     document.getElementById('target').innerHTML = words;
+    document.getElementById('id01').style.display='block'; // show the
+
 }
 
 function fruitp3() {
@@ -33,7 +35,7 @@ function fruitp3() {
                     '<br>'+
                     'מחיר: 290 ש"ח' +
                 '</p>';
-    document.getElementById('modal_img').src="imageProject/plate3.jpg";
+    document.getElementById('modal_img').src="/homepage/media/plate3.jpg";
     document.getElementById('target').innerHTML = words;
 }
 
@@ -49,7 +51,7 @@ function fruitp1() {
                     '<br>'+
                     'מחיר: 350 ש"ח' +
                 '</p>';
-    document.getElementById('modal_img').src="imageProject/plate1.jpg";
+    document.getElementById('modal_img').src="/homepage/media/plate1.jpg";
     document.getElementById('target').innerHTML = words;
 }
 
@@ -65,7 +67,7 @@ function fruitp2() {
                     '<br>'+
                     'מחיר: 275 ש"ח' +
                 '</p>';
-    document.getElementById('modal_img').src="imageProject/plate2.jpg";
+    document.getElementById('modal_img').src="/homepage/media/fruit20.jpg";
     document.getElementById('target').innerHTML = words;
 }
 
@@ -81,7 +83,7 @@ function fruit2() {
                     '<br>'+
                     'מחיר: 250 ש"ח' +
                 '</p>';
-    document.getElementById('modal_img').src="imageProject/fruit2.jpg";
+    document.getElementById('modal_img').src="/homepage/media/fruit2.jpg";
     document.getElementById('target').innerHTML = words;
 }
 
@@ -97,7 +99,7 @@ function fruit5() {
                     '<br>'+
                     'מחיר: 300 ש"ח' +
                 '</p>';
-    document.getElementById('modal_img').src=  "imageProject/fruit5.jpg" ;
+    document.getElementById('modal_img').src= "/homepage/media/fruit5.jpg" ;
     document.getElementById('target').innerHTML = words;
 }
 

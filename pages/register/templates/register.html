@@ -9,7 +9,16 @@
 {% block page_body_main %}
     <main>
     <section id="register" class="section">
-			<br>
+    {% if register %}
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for ms in messages %}
+                    <h4>{{ ms }}</h4>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    {% else %}
+        <br>
 		<form  method="POST" action="/insert_user" onsubmit="return validUS()">
 			<div class="container">
 				<h1>הרשמה</h1>
@@ -30,6 +39,7 @@
 				</div>
 			</div>
 		</form>
+    {% endif %}
 	<br>
 	<br>
 	</section>

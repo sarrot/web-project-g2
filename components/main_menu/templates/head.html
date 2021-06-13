@@ -16,9 +16,14 @@
 			</nav>
 				<div>
 				<b>
-				<a class="navlink" href="/register">הרשמה</a>
-				<a class="navlink" href="/login">התחברות</a>
-				</b>
+                {% if  session['userName'] %}
+                      <a> שלום {{ session['userName'] }}  </a>
+                      <a class="navlink" href="/logout" >התנתק</a>
+                {% else %}
+				    <a class="navlink" href="/register">הרשמה</a>
+				    <a class="navlink" href="/login">התחברות</a>
+                {% endif %}
+                </b>
 				</div>
 </header>
 

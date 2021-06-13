@@ -8,23 +8,47 @@
 
 {% block page_body_main %}
     <main>
-	<section id="login" class="section" >
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for ms in messages %}
+                    <h4>{{ ms }}</h4>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+     {% if  session['userName'] %}
+         <section id="login" class="section" >
+         <br>
+		 <br>
+             <form action="/logout" method="post" >
+                <div class="container">
+                   <button type="submit">התנתקות</button>
+                </div>
+             </form>
+        <br>
 		<br>
 		<br>
-		<form action="" method="post" >
+        <br>
+    	</section>
+     {% else %}
+         <section id="login" class="section" >
+         <br>
+		 <br>
+		  <form action="/connect" method="post" >
 			<div class="container">
-				<label for="uname"><b class="register">שם משתמש</b></label>
-				<input type="text" placeholder="הכנס שם משתמש" name="uname" id="uname" required>
+				<label for="email"><b class="register"> דוא"ל</b></label>
+				<input type="text" placeholder="הכנס דואר אלקטרוני" name="email" id="uname" required>
 				<label for="psw"><b class="register">סיסמא</b></label>
 				<input type="password" placeholder="הכנס סיסמא" name="psw" id="psw" required>
 				<button type="submit">התחברות</button>
 			</div>
-		</form>
+		  </form>
 		<br>
 		<br>
 		<br>
         <br>
-	</section>
+    	</section>
+
+                {% endif %}
 
     </main>
 {% endblock %}

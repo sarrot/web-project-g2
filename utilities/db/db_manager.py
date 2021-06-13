@@ -29,6 +29,7 @@ class DBManager:
         self.__close_connection()
         return query_result
 
+
     def execute(self, query, args=()):
         # Use for CREATE, DROP AND ALTER statements.
         self.__connect()
