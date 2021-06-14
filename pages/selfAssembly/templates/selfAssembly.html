@@ -10,37 +10,38 @@
 {% block page_body_main %}
 <main>
 			<div id="text" >  </div>
+    <form method="post" action="selfAssembly.html">
 			<section id="sizes" class="choices">
 
 					<h1 class="choice">:גודל מגש רצוי</h1>
 					<h2> מגשים מרובעים:</h2>
 					<div class="tray">
 						<a>
-					  		<button  onclick="chosen(this)" class="sizeA" id="size1"> <b>20X30</b> </button>
-							<span>2 סועדים</span>
+							<span> <img src="{{ url_for('selfAssembly.static', filename='media/20_30.JPG') }}" alt="20_30" style="width: 80%"></span>
+                            <span>סועדים: 2 <input type="checkbox"  name="check" onclick="onlyOne(this)"></span>
 						</a>
 						<a>
-							<button onclick="chosen(this)" class="sizeA" id="size2"> <b>30X30</b> </button>
-							<span>4 סועדים</span>
+							<span> <img  src="{{ url_for('selfAssembly.static', filename='media/30_30.JPG') }}" alt="20_30" style="width: 80%"></span>
+                            <span>סועדים: 4 <input type="checkbox"  name="check" onclick="onlyOne(this)"></span>
 						</a>
 						<a>
-							<button onclick="chosen(this)" class="sizeA" id="size3"> <b>40X30</b> </button>
-							<span>8 סועדים</span>
+							<span> <img  src="{{ url_for('selfAssembly.static', filename='media/40_30.JPG') }}" alt="20_30" style="width: 80%"></span>
+                            <span>סועדים: 8 <input type="checkbox"  name="check" onclick="onlyOne(this)"></span>
 						</a>
 					</div>
     				<h2> מגשים עגולים:</h2>
 					<div class="tray">
 						<a>
-							<button onclick="chosen(this)" class="sizeB" id="size4"> <b>25X25</b> </button>
-							<span>2 סועדים</span>
+							<span> <img  src="{{ url_for('selfAssembly.static', filename='media/25.JPG') }}" alt="20_30" style="width: 70%"></span>
+                            <span>סועדים: 2 <input type="checkbox" name="check" onclick="onlyOne(this)"></span>
 						</a>
     				  	<a>
-							<button onclick="chosen(this)" class="sizeB" id="size5"> <b>35X35</b> </button>
-							<span>4 סועדים</span>
+							<span> <img  src="{{ url_for('selfAssembly.static', filename='media/35.JPG') }}" alt="20_30" style="width: 70%"></span>
+                            <span>סועדים: 4 <input type="checkbox" name="check" onclick="onlyOne(this)"></span>
 						</a>
 					  	<a>
-							<button onclick="chosen(this)" class="sizeB" id="size6"> <b>45X45</b> </button>
-							<span>8 סועדים</span>
+							<span> <img  src="{{ url_for('selfAssembly.static', filename='media/45.JPG') }}" alt="20_30" style="width: 70%"></span>
+                            <span>סועדים: 8 <input type="checkbox" name="check" onclick="onlyOne(this)"></span>
 						</a>
 					</div>
 			</section>
@@ -56,27 +57,27 @@
 						<span>ענבים</span>
 						<input class="checkbox"  type="checkbox" name="anavim" value="anavim">
 					</a>
-					<a style="background-image:{{ url_for('selfAssembly.static', filename='media/avatiah.jpg') }})">
+					<a style="background-image: url({{ url_for('selfAssembly.static', filename='media/avatiah.jpg') }})">
 						<span>אבטיח</span>
 						<input class="checkbox"  type="checkbox" name="avatiah" value="avatiah">
 					</a>
-					<a style="background-image:{{ url_for('selfAssembly.static', filename='media/akiwi.jpg') }})" >
+					<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/kiwi.jpg') }})" >
 						<span>קיוי</span>
 						<input class="checkbox" type="checkbox" name="kiwi" value="kiwi">
 					</a>
-					<a style="background-image:{{ url_for('selfAssembly.static', filename='media/melon.jpg') }})" >
+					<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/melon.jpg') }})" >
 						<span>מלון</span>
 						<input class="checkbox"  type="checkbox" name="melon" value="melon">
 					</a>
-		 			<a style="background-image:{{ url_for('selfAssembly.static', filename='media/mishmesh.jpg') }})" >
+		 			<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/mishmesh.jpg') }})" >
 						<span>משמש</span>
 						<input class="checkbox"  type="checkbox" name="mishmesh" value="mishmesh">
 					</a>
-		 			<a style="background-image:{{ url_for('selfAssembly.static', filename='media/nectarina.jpg') }})" >
+		 			<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/nectarina.jpg') }})" >
 						<span>נקטרינה</span>
 						<input class="checkbox"  type="checkbox" name="nectarina" value="nectarina">
 					</a>
-					<a style="background-image:{{ url_for('selfAssembly.static', filename='media/shezifim.jpg') }})" >
+					<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/shezifim.jpg') }})" >
 						<span>שזיף</span>
 						<input class="checkbox"  type="checkbox" name="shezifim" value="shezifim">
 					</a>
@@ -126,12 +127,14 @@
 					<br>
 					<br>
 				          <h3 id="total">סה"כ עלות לפלטה : 0 ש"ח</h3>
-						  <button id="cart">  <b>הוסף לסל</b>  </button>
+                        <input type="submit" id="cart" value="הוסף לסל">
+{#						  <button id="cart">  <b>הוסף לסל</b>  </button>#}
 					<br>
 					<br>
 					<br>
 
 				</section>
+        </form>
 		</main>
 {% endblock %}
 

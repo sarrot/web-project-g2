@@ -20,3 +20,10 @@ function chosen(element) {
     document.getElementById("size6").style.backgroundColor ='white';
     element.style.backgroundColor ='dimgray';
 }
+
+function onlyOne(checkbox) {
+    let checkboxes = document.getElementsByName('check')
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) item.checked = false
+    })
+}
