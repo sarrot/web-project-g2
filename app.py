@@ -30,6 +30,10 @@ app.register_blueprint(register)
 from pages.shoppingcart.shoppingcart import shoppingcart
 app.register_blueprint(shoppingcart)
 
+## payment
+from pages.payment.payment import payment
+app.register_blueprint(payment)
+
 ## Page error handlers
 from pages.page_error_handlers.page_error_handlers import page_error_handlers
 app.register_blueprint(page_error_handlers)

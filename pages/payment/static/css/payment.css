@@ -1,0 +1,62 @@
+
+body{
+      text-align: center;
+}
+
+main {
+    background: #ecab94;
+    width: 100%;
+    margin-top: 10%;
+}
+
+form {
+   display: inline-block;
+  background-color: antiquewhite;
+  border: 3px solid #f1f1f1;
+  width: 40%;
+  font-size: 1.5vw;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] ,input[type=email], textarea[type=message]{
+   direction: rtl;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 2vw;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #bf6d50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+#fordate{
+    width: 100%;
+}
+
+@media only screen and (max-width: 758px) {
+
+ input[type=text], input[type=password] ,input[type=email], textarea[type=message]{
+  font-size: 3vw;
+ }
+ button{
+  font-size: 4vw ;
+ }
+}

@@ -25,3 +25,12 @@ class User:
             return result[0][0]
         return ""
 
+    def user_cart(self, user):
+        query = "SELECT p.plate_name, p.price, c.quantity, p.hebrew_name, p.photo FROM cart c join plates p on c.plate_name = p.plate_name  WHERE user = '%s'" %(user)
+        cart = dbManager.fetch(query)
+        return cart
+
+    def user_final_price(self, user):
+        query = "SELECT  SUM(p.price) as total_price FROM cart c join plates p on c.plate_name = p.plate_name  WHERE user = '%s'" %(user)
+        price = dbManager.fetch(query)
+        return price[0][0]

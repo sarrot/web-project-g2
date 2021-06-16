@@ -22,5 +22,5 @@ def insert():
     flash('(: נרשם בהצלחה ')
     register = "yes"
     return render_template('register.html', register= register)
-        # redirect(url_for('register.index'))
+
 

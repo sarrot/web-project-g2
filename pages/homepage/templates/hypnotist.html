@@ -1,0 +1,26 @@
+{% extends'homepage.html' %}
+
+
+{% block modal_plate %}
+			<div id="id01" class="modal" style="display: block">
+				<form class="modal-content animate" >
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+						 <img id="modal_img" alt="Avatar" class="avatar" src="/homepage/media/plate4.jpg">
+					</div>
+					    <div class="container">
+                         <span onload=" document.getElementById('id01').style.display='block'"></span>
+                            <p id= target> פלטה "מהפנט"- מרכיבים:<br>תותים, ענבים, דודבנים, קרמבולה <br> מלון, אננס, קוקוס ופסיפלורה<br> מחיר: 265 ש"ח </p>
+                            {% if session['userName'] %}
+                            <a id = modal_b class="modalbutton" href= '/add_cart_hypnotist' >הוסף לסל</a>
+                             {% else %}
+                                <h4>בצע התחברות על מנת<br> להוסיף לסל</h4>
+                            {%  endif %}
+						</div>
+					<div class="container">
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="modalbutton"  id="cancelbtn">חזור</button>
+					</div>
+				</form>
+			</div>
+
+{% endblock %}

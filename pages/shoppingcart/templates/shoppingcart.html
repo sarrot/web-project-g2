@@ -12,32 +12,33 @@
 				<h1 class="cart" >סל הקניות שלך</h1>
 				<div id="text" >  </div>
 			</section>
-             <!-- המוצר הנבחר הראשון -->
- 			<section  class="product" id="product1">
-     			<button class="remove-product" onclick="remove1() "><b> מחק פריט מהרשימה</b> </button>
+
+    {% if session %}
+           {% for item in cart %}
+ 			<section  class="product" id={{ item.plate_name }}>
+                <hr class="line" >
+     			<a class="remove-product" href="/shoppingcart/{{ item.plate_name }}" onclick="document.getElementById('{{ item.plate_name }}').style.display='none'"><b> מחק פריט מהרשימה</b> </a>
 				<label for="name"> </label>
-     			<input class="product-quantity"  id="name" type="number" value="1" min="1">
-				<div class="product-price">350 ש"ח</div>
-     				<h3 class="product-name"> פלטה משפחתית </h3>
-     				<img class="pic" src="{{url_for('homepage.static',filename='media/fruit2.jpg')}}" alt="פלטה משפחתית">
+     			<input class="product-quantity" type="text" name="value" min="1" value="1" >
+				<div class="product-price">{{ item.price }} </div>
+     				<h3 class="product-name"> {{ item.hebrew_name }} </h3>
+     				<img class="pic"  alt = "plate" src= {{ item.photo }} >
  			</section>
-                 <!-- המוצר הנבחר השני -->
-  			<section class="product" id="product2">
-				<hr class="line" >
-     			<button class="remove-product" onclick="remove2()"><b> מחק פריט מהרשימה</b> </button>
-				<label for="Pname"> </label>
-     			<input class="product-quantity" id="Pname" type="number"  value="1" min="1">
-				<div class="product-price">250 ש"ח</div>
-     				<h3 class="product-name"> פלטה בהרכבה עצמית </h3>
-     				<img class="pic" id="assembly" src="{{ url_for('homepage.static', filename='media/fruit5.jpg') }}" alt="הרכבה עצמית">
- 			</section>
+            {% endfor %}
+
                  <!-- סיכום הזמנה -->
   			<section class="totals">
       		 <hr class="line">
-      			<h3 class="tot"> :סך הכל לתשלום</h3>
-      			<div class="totals-price" >600 ש"ח</div>
-      			<button onclick="window.location.href='payment.html'"  class="send" > שלח הזמנה </button>
+                <a href="/shoppingcart/updatePrice "  class="tot" id="tot" > הצג סכום ביניים </a>
+                <p class="total-price"> <b>{{ price }} </b></p>
+                <h3>{{ amounts }}</h3>
+      			<button onclick="window.location.href='/shoppingcart/payment'"  class="send" > שלח הזמנה </button>
 			</section>
+    {% else %}
+        <h2>
+            אנא התחבר למשתמש על מנת לראות את סל הקניות (:
+        </h2>
+    {% endif %}
 
     </main>
 {% endblock %}

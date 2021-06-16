@@ -4,85 +4,79 @@
 
 {% block page_head_css %}
      <link rel="stylesheet" href="{{ url_for('selfAssembly.static', filename='css/selfAssembly.css') }}"/>
+
 {% endblock %}
 
 
 {% block page_body_main %}
 <main>
 			<div id="text" >  </div>
+    <form method="post" action="/calcPrice">
 			<section id="sizes" class="choices">
-
+                    <h3 style="color: red">{{ error }}</h3>
 					<h1 class="choice">:גודל מגש רצוי</h1>
 					<h2> מגשים מרובעים:</h2>
+
+                    <div class="tray">
+                     {% for item in base_plate_square %}
+                	    <a>
+							<span> <img src = {{ item.photo }} alt="photo" style="width: 80%"></span>
+                            <span>סועדים: {{ item.num_of_eat }} <input type="radio"  name="size" value={{ item.plate_size }} onclick="onlyOne(this)"></span>
+						</a>
+                    {% endfor %}
+                    </div>
+
+                    <h2> מגשים עגולים:</h2>
 					<div class="tray">
+                     {% for item in base_plate_circle %}
 						<a>
-					  		<button  onclick="chosen(this)" class="sizeA" id="size1"> <b>20X30</b> </button>
-							<span>2 סועדים</span>
+							<span> <img  src={{ item.photo }} alt="circle" style="width: 70%"></span>
+                            <span>סועדים: {{ item.num_of_eat }} <input type="radio" name="size" value={{ item.plate_size }} onclick="onlyOne(this)"></span>
 						</a>
-						<a>
-							<button onclick="chosen(this)" class="sizeA" id="size2"> <b>30X30</b> </button>
-							<span>4 סועדים</span>
-						</a>
-						<a>
-							<button onclick="chosen(this)" class="sizeA" id="size3"> <b>40X30</b> </button>
-							<span>8 סועדים</span>
-						</a>
-					</div>
-    				<h2> מגשים עגולים:</h2>
-					<div class="tray">
-						<a>
-							<button onclick="chosen(this)" class="sizeB" id="size4"> <b>25X25</b> </button>
-							<span>2 סועדים</span>
-						</a>
-    				  	<a>
-							<button onclick="chosen(this)" class="sizeB" id="size5"> <b>35X35</b> </button>
-							<span>4 סועדים</span>
-						</a>
-					  	<a>
-							<button onclick="chosen(this)" class="sizeB" id="size6"> <b>45X45</b> </button>
-							<span>8 סועדים</span>
-						</a>
-					</div>
-			</section>
+                    {% endfor %}
+                    </div>
+            </section>
+
 			<section id="photos" class="choices">
   				<h1 class="choice">:פירות לבחירה</h1>
 				<h2> פירות בסיס:</h2>
 				<div class="images_buttons">
+
 					<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/afarsek.jpg') }})" >
 						<span>אפרסק</span>
-						<input class="checkbox" id="cafarsek" type="checkbox" name="afarsek" value="afarsek" >
+						<input class="checkbox" id="cafarsek" type="checkbox" name="fruits" value="afarsek" >
 					</a>
 					<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/anavim.jpg') }})" >
 						<span>ענבים</span>
-						<input class="checkbox"  type="checkbox" name="anavim" value="anavim">
+						<input class="checkbox"  type="checkbox" name="fruits" value="anavim">
 					</a>
-					<a style="background-image:{{ url_for('selfAssembly.static', filename='media/avatiah.jpg') }})">
+					<a style="background-image: url({{ url_for('selfAssembly.static', filename='media/avatiah.jpg') }})">
 						<span>אבטיח</span>
-						<input class="checkbox"  type="checkbox" name="avatiah" value="avatiah">
+						<input class="checkbox"  type="checkbox" name="fruits" value="avatiah">
 					</a>
-					<a style="background-image:{{ url_for('selfAssembly.static', filename='media/akiwi.jpg') }})" >
+					<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/kiwi.jpg') }})" >
 						<span>קיוי</span>
-						<input class="checkbox" type="checkbox" name="kiwi" value="kiwi">
+						<input class="checkbox" type="checkbox" name="fruits" value="kiwi">
 					</a>
-					<a style="background-image:{{ url_for('selfAssembly.static', filename='media/melon.jpg') }})" >
+					<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/melon.jpg') }})" >
 						<span>מלון</span>
-						<input class="checkbox"  type="checkbox" name="melon" value="melon">
+						<input class="checkbox"  type="checkbox" name="fruits" value="melon">
 					</a>
-		 			<a style="background-image:{{ url_for('selfAssembly.static', filename='media/mishmesh.jpg') }})" >
+		 			<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/mishmesh.jpg') }})" >
 						<span>משמש</span>
-						<input class="checkbox"  type="checkbox" name="mishmesh" value="mishmesh">
+						<input class="checkbox"  type="checkbox" name="fruits" value="mishmesh">
 					</a>
-		 			<a style="background-image:{{ url_for('selfAssembly.static', filename='media/nectarina.jpg') }})" >
+		 			<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/nectarina.jpg') }})" >
 						<span>נקטרינה</span>
-						<input class="checkbox"  type="checkbox" name="nectarina" value="nectarina">
+						<input class="checkbox"  type="checkbox" name="fruits" value="nectarina">
 					</a>
-					<a style="background-image:{{ url_for('selfAssembly.static', filename='media/shezifim.jpg') }})" >
+					<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/shezifim.jpg') }})" >
 						<span>שזיף</span>
-						<input class="checkbox"  type="checkbox" name="shezifim" value="shezifim">
+						<input class="checkbox"  type="checkbox" name="fruits" value="shezifim">
 					</a>
 					<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/teenim.jpg') }})" >
 						<span>תאנים</span>
-						<input class="checkbox"  type="checkbox" name="teenim" value="teenim">
+						<input class="checkbox"  type="checkbox" name="fruits" value="teenim">
 					</a>
 				</div>
 				<br>
@@ -91,52 +85,64 @@
      				<div class="images_buttons">
 						<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/ananas.jpg') }})" >
 							<span>אננס</span>
-							<input class="checkbox"  type="checkbox" name="ananas" value="ananas">
+							<input class="checkbox"  type="checkbox" name="fruits" value="ananas">
 						</a>
         				<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/duvdevan.jpg') }})" >
 							<span>דובדבנים</span>
-							<input class="checkbox"  type="checkbox" name="duvdevan" value="duvdevan">
+							<input class="checkbox"  type="checkbox" name="fruits" value="duvdevan">
 						</a>
 						<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/karambola.jpg') }})" >
 							<span>קרמבולה</span>
-							<input class="checkbox"  type="checkbox" name="karambola" value="karambola">
+							<input class="checkbox"  type="checkbox" name="fruits" value="karambola">
 						</a>
 						<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/lychee-temp.jpg') }})" >
 							<span>ליצ'י</span>
-							<input class="checkbox"  type="checkbox" name="lychee" value="lychee">
+							<input class="checkbox"  type="checkbox" name="fruits" value="lychee">
 						</a>
 		 				<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/ohmaniot.jpg') }})" >
 							<span>אוכמניות</span>
-	    					<input class="checkbox"  type="checkbox" name="ohmaniot" value="ohmaniot">
+	    					<input class="checkbox"  type="checkbox" name="fruits" value="ohmaniot">
 		 				</a>
 						<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/pasiflora.jpg') }})" >
 							<span>פסיפלורה</span>
-							<input class="checkbox"  type="checkbox" name="pasiflora" value="pasiflora">
+							<input class="checkbox"  type="checkbox" name="fruits" value="pasiflora">
 						</a>
 						<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/petel.jpg') }})" >
 							<span>פטל</span>
-							<input class="checkbox"  type="checkbox" name="petel" value="petel">
+							<input class="checkbox"  type="checkbox" name="fruits" value="petel">
         				</a>
 						<a style="background-image:url({{ url_for('selfAssembly.static', filename='media/sabre.jpg') }})" >
 							<span>סברס</span>
-							<input class="checkbox"  type="checkbox" name="sabre" value="sabre">
+							<input class="checkbox"  type="checkbox" name="fruits" value="sabre">
         				</a>
 					</div>
 					<br>
 					<br>
 					<br>
-				          <h3 id="total">סה"כ עלות לפלטה : 0 ש"ח</h3>
-						  <button id="cart">  <b>הוסף לסל</b>  </button>
-					<br>
-					<br>
-					<br>
+                            {%  if final_price %}
+                                <h3 id="total">סה"כ עלות לפלטה : {{ final_price }} ש"ח</h3>
+                            {% endif %}
 
+                        <input type="submit" id="cart" value="הצג עלות">
+					<br>
+					<br>
+					<br>
 				</section>
+        </form>
+      {%  if session %}
+        {%  if final_price %}
+        <form action="/insert_self_to_cart/{{ final_price }}/{{ fruit_list }} ">
+            <input type="submit" id="cart" value="הוסף לסל">
+        </form>
+        {% endif %}
+      {% else %}
+            <h3> אנא התחבר לאתר על מנת להוסיף את הפלטה לעגלה </h3>
+      {% endif %}
 		</main>
 {% endblock %}
 
 {% block page_body_footer %}{% endblock %}
 
 {% block page_body_js %}
-    <script src="{{ url_for('selfAssembly.static', filename='js/selfAssembly.js') }}"></script>
+    <script src="{{ url_for('selfAssembly.static', filename='./js/selfAssembly.js') }}"></script>
 {% endblock %}
