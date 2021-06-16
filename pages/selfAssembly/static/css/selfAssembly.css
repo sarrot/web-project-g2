@@ -39,21 +39,25 @@ body{
 	background-color: var(--brightPeach) ;
 }
 
-.sizeA{ /*square trays*/
-	font-size: 4vw;
-	margin-right:10% ;
-	float: right;
-	border-radius: 10%;
-	padding: 5%;
+.sizeA{
+	height: 40px;
+	width: 40px;
 }
+/*.sizeA{ !*square trays*!*/
+/*	font-size: 4vw;*/
+/*	margin-right:10% ;*/
+/*	float: right;*/
+/*	border-radius: 10%;*/
+/*	padding: 5%;*/
+/*}*/
 
-.sizeB{ /*round trays*/
-    font-size: 4vw ;
-	margin-right:10% ;
-	float: right;
-	border-radius: 50%;
-	padding: 15%;
-}
+/*.sizeB{ !*round trays*!*/
+/*    font-size: 4vw ;*/
+/*	margin-right:10% ;*/
+/*	float: right;*/
+/*	border-radius: 50%;*/
+/*	padding: 15%;*/
+/*}*/
 
 .images_buttons {
 	display: flex;
