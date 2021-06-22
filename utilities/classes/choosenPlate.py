@@ -38,7 +38,6 @@ class choosenPlate:
     def get_fruit_price(self, fruit_name):
         query = "SELECT fruit_price FROM fruit WHERE fruit_name = '%s'" % (fruit_name)
         result = dbManager.fetch(query)
-        print(result[0][0])
         return result[0][0]
 
     def get_square_plate(self):
@@ -51,16 +50,13 @@ class choosenPlate:
         result = dbManager.fetch(query)
         return result
 
-    def get_fruit_regular(self):
-        query = "SELECT * FROM fruit WHERE type = '%s'" % ('regular')
-        result = dbManager.fetch(query)
-        return result
+    # def get_fruit_regular(self):
+    #     query = "SELECT * FROM fruit WHERE type = '%s'" % ('regular')
+    #     result = dbManager.fetch(query)
+    #     return result
 
-    def insert_self_cart(self, price, email):
-        query = "INSERT INTO cart(plate_name, price,hebrew_name, photo, user) VALUES ('%s','%s','%s','%s','%s')" % ('self_assembly', price, 'מגש בהרכבה עצמית', '/selfAssembly/media/self_assm.jpg', email)
-        dbManager.commit(query)
+    # def insert_to_self_plate(self, email):
+    #     query = "INSERT INTO self_plate(self_size, self_fruit1, self_fruit2, self_fruit3, self_fruit4, self_fruit5, self_fruit6, self_fruit7, self_fruit8, self_price, user) VALUES ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s', '%s' )" % (self.__self_size, self.__fruit1, self.__fruit2, self.__fruit3, self.__fruit4, self.__fruit5, self.__fruit6, self.__fruit7, self.__fruit8, self.__total_price, self.__user)
+    #     dbManager.commit(query)
 
-    def insert_to_self_plate(self, email):
-        query = "INSERT INTO self_plate(self_size, self_fruit1, self_fruit2, self_fruit3, self_fruit4, self_fruit5, self_fruit6, self_fruit7, self_fruit8, self_price, user) VALUES ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s', '%s' )" % (self.__self_size, self.__fruit1, self.__fruit2, self.__fruit3, self.__fruit4, self.__fruit5, self.__fruit6, self.__fruit7, self.__fruit8, self.__total_price, self.__user)
-        dbManager.commit(query)
 

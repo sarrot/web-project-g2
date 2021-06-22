@@ -24,7 +24,7 @@ body{
 }
 
 .tray a:hover {
-	transform: scale(1.2);
+	/*transform: scale(1.2);*/
 	cursor:pointer;
 }
 
@@ -43,21 +43,6 @@ body{
 	height: 40px;
 	width: 40px;
 }
-/*.sizeA{ !*square trays*!*/
-/*	font-size: 4vw;*/
-/*	margin-right:10% ;*/
-/*	float: right;*/
-/*	border-radius: 10%;*/
-/*	padding: 5%;*/
-/*}*/
-
-/*.sizeB{ !*round trays*!*/
-/*    font-size: 4vw ;*/
-/*	margin-right:10% ;*/
-/*	float: right;*/
-/*	border-radius: 50%;*/
-/*	padding: 15%;*/
-/*}*/
 
 .images_buttons {
 	display: flex;
@@ -83,11 +68,6 @@ body{
 	font-weight: bold;
 }
 
-.images_buttons a:hover {
-	/*transform: scale(1.2);*/
-	/*cursor:pointer;*/
-	/*box-shadow: 7px 6px 5px var(--boldPeach);*/
-}
 
 .images_buttons a:hover span {
 
@@ -134,13 +114,22 @@ h3{
 	font-style: oblique;
 
 }
-#cart{
+.cart{
 	font-size: 2.5vw;
 	float: right;
 	border-radius: 10%;
 	padding: 1vw;
+	color:var(--boldPeach);
+	border-color: var(--boldPeach);
+	font-weight: bold;
 }
 
+#addC{
+	margin-top: 2%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+
+}
 
 @media only screen and (max-width: 500px) { /*for mobile*/
 

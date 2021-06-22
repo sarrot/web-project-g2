@@ -1,5 +1,3 @@
-function text() {
-}
 
 // registration valid
 function validUS() {

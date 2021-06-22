@@ -14,27 +14,15 @@
    <main >
 
 		<h2 id="text"> </h2>
+        <div class="images_buttons">
+        {% for plate in plates %}
+				<a href={{ plate.action }}>
+					<span>{{ plate.hebrew_name }}</span>
+                    <img src={{ plate.photo }}>
+				</a>
+        {% endfor %}
+         </div>
 
-     		<div class="images_buttons">
-				<a id="fruit5" class="photh_button"  href='/homepage/open_double' style="background-image: url({{ url_for('homepage.static', filename='media/fruit5.jpg') }})">
-					<span>זוגי</span>
-				</a>
-        		<a id="fruit2" class="photh_button"  href='/homepage/open_family' style="background-image: url({{url_for('homepage.static',filename='media/fruit2.jpg')}})">
-					<span>משפחתי</span>
-				</a>
-		 		<a id="fruit6" class="photh_button"  href='/homepage/open_exotic' style="background-image: url({{url_for('homepage.static',filename='media/fruit20.jpg')}})">
-					<span>אקזוטי</span>
-				</a>
-				<a  class="photh_button" href='/homepage/open_pampering' style="background-image: url({{url_for('homepage.static',filename='media/plate1.jpg')}})">
-					<span>מפנק</span>
-				</a>
-        		<a  class="photh_button" href='/homepage/open_exciting' style="background-image: url({{url_for('homepage.static',filename='media/plate3.jpg')}})">
-					<span>מרגש</span>
-				</a>
-		 		<a class="photh_button" href='/homepage/open_hypnotist' style="background-image: url({{url_for('homepage.static',filename='media/plate4.jpg')}})">
-					<span>מהפנט</span>
-				</a>
-			</div>
        {% block modal_plate %}
 
        {% endblock %}

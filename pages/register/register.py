@@ -13,14 +13,18 @@ def index():
 
 @register.route('/insert_user',methods=['POST'])
 def insert():
+    user = User('first_name', 'last_name', 'email', 'password_user')
     first_name = request.form['first_name']
     last_name = request.form['last_name']
     email = request.form['email']
-    psw = request.form['psw']
-    user = User(first_name,last_name,email, psw)
-    user.insert_user()
-    flash('(: נרשם בהצלחה ')
+    user_email= user.get_email(email)
+    if user_email:
+        psw = request.form['psw']
+        user = User(first_name,last_name,email, psw)
+        user.insert_user()
+        flash('(: נרשם בהצלחה ')
+    else:
+        flash(' משתמש עם מייל זה קיים באתר, נסה שוב ')
     register = "yes"
     return render_template('register.html', register= register)
-
 

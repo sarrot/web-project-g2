@@ -3,6 +3,10 @@ body{
       text-align: center;
 }
 
+h2{
+    padding-bottom: 2.5%;
+}
+
 
 /*MAIN
 -----------------------------------------*/
@@ -27,24 +31,35 @@ main {
 	justify-content: center;
 	z-index:3;
 	}
+
+
 .images_buttons a {
 	width: 20%;
-	background-size: cover;
-    background-position: center;
+    height: 20%;
+	/*background-size: cover;*/
+    /*background-position: center;*/
     border-radius: 20%;
-	background-repeat: no-repeat;
+	/*background-repeat: no-repeat;*/
     margin-right: 5%;
     margin-left: 5%;
     margin-bottom: 5%;
+    text-decoration: none;
 	}
 
+.images_buttons img{
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+}
+
 .images_buttons span {
-	margin-top: 100%;
+	/*margin-top: 100%;*/
 	display: block;
 	text-align:center;
 	color: #fff;
 	font-weight: bold;
     font-size: larger;
+    /*text-decoration: none;*/
 	}
 
 .images_buttons a:hover {
@@ -165,9 +180,9 @@ button {
   text-decoration: none; /* removes default underline */
 }
 
-.photh_button{
-   text-decoration: none; /* removes default underline */
-}
+/*.photh_button{*/
+/*   text-decoration: none; !* removes default underline *!*/
+/*}*/
 
 /* Add a hover effect for buttons */
 button:hover {
@@ -183,5 +198,25 @@ button:hover {
  button{
   font-size: 4vw ;
  }
+
+ .images_buttons{
+	/*width: 20%;*/
+    /* height: 25%;*/
+    border-radius: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    text-decoration: none;
+	}
+
+    .images_buttons a{
+	width: 20%;
+    /* height: 25%;*/
+	}
+
+    .images_buttons img{
+        width: 100%;
+    }
+
 
 }

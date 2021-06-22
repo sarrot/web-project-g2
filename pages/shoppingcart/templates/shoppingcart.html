@@ -17,18 +17,22 @@
            {% for item in cart %}
  			<section  class="product" id={{ item.plate_name }}>
                 <hr class="line" >
-     			<a class="remove-product" href="/shoppingcart/{{ item.plate_name }}" onclick="document.getElementById('{{ item.plate_name }}').style.display='none'"><b> מחק פריט מהרשימה</b> </a>
+     			<a class="remove-product" href="/shoppingcart/{{ item.serial_number }}" onclick="document.getElementById('{{ item.serial_number }}').style.display='none'"><b> מחק פריט מהרשימה</b> </a>
 				<label for="name"> </label>
-     			<input class="product-quantity" type="text" name="value" min="1" value="1" >
-				<div class="product-price">{{ item.price }} </div>
-     				<h3 class="product-name"> {{ item.hebrew_name }} </h3>
-     				<img class="pic"  alt = "plate" src= {{ item.photo }} >
+                {% if item.price %}
+				    <div class="product-price">{{ item.price }} </div>
+                {% else %}
+                    <div class="product-price">{{ item.self_price }} </div>
+                {% endif %}
+                <h3 class="product-name"> {{ item.hebrew_name }} </h3>
+                <img class="pic"  alt = "plate" src= {{ item.photo }} >
  			</section>
             {% endfor %}
 
                  <!-- סיכום הזמנה -->
   			<section class="totals">
       		 <hr class="line">
+                <h4>{{ error }}</h4>
                 <a href="/shoppingcart/updatePrice "  class="tot" id="tot" > הצג סכום ביניים </a>
                 <p class="total-price"> <b>{{ price }} </b></p>
                 <h3>{{ amounts }}</h3>

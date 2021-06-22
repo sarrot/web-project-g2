@@ -10,8 +10,8 @@
 
 {% block page_body_main %}
 <main>
-			<div id="text" >  </div>
-    <form method="post" action="/calcPrice">
+    <div id="text" >  </div>
+    <form action="/calcPrice">
 			<section id="sizes" class="choices">
                     <h3 style="color: red">{{ error }}</h3>
 					<h1 class="choice">:גודל מגש רצוי</h1>
@@ -39,6 +39,7 @@
 
 			<section id="photos" class="choices">
   				<h1 class="choice">:פירות לבחירה</h1>
+                <h4>נא לבחור עד שמונה פירות</h4>
 				<h2> פירות בסיס:</h2>
 				<div class="images_buttons">
 
@@ -123,7 +124,7 @@
                                 <h3 id="total">סה"כ עלות לפלטה : {{ final_price }} ש"ח</h3>
                             {% endif %}
 
-                        <input type="submit" id="cart" value="הצג עלות">
+                        <input type="submit" class="cart" value="הצג עלות">
 					<br>
 					<br>
 					<br>
@@ -132,7 +133,7 @@
       {%  if session %}
         {%  if final_price %}
         <form action="/insert_self_to_cart/{{ final_price }}/{{ fruit_list }} ">
-            <input type="submit" id="cart" value="הוסף לסל">
+            <input type="submit" class="cart" id="addC" value="הוסף לסל">
         </form>
         {% endif %}
       {% else %}
@@ -141,7 +142,6 @@
 		</main>
 {% endblock %}
 
-{% block page_body_footer %}{% endblock %}
 
 {% block page_body_js %}
     <script src="{{ url_for('selfAssembly.static', filename='./js/selfAssembly.js') }}"></script>

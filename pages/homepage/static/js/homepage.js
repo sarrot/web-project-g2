@@ -2,6 +2,7 @@
 window.onclick = function(event) {
     if (event.target === document.getElementById('id01')) {
         document.getElementById('id01').style.display = "none";
+        window.location.href='/homepage'
     }
 }
 
@@ -14,4 +15,9 @@ function text() {   //inside letters animation
         i++;
         setTimeout(text,80);
     }
+}
+
+function back(){
+     window.location.href='/homepage'
+    document.getElementById('id01').style.display='none'
 }

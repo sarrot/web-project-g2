@@ -11,32 +11,38 @@
 <main>
 
 	<section id="login" class="section" >
+    {% if succcess %}
+                {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for ms in messages %}
+                    <h4>{{ ms }}</h4>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    {% else %}
 		<h3>מלא פרטי משלוח</h3>
-		<form method="POST" enctype="multipart/form-data" action="/todo">
+		<form method="POST" enctype="multipart/form-data" action="/payment" onsubmit="return validUS()">
 			<div class="container">
 				<label for="address"><b class="register" id="address11" >כתובת הספקה </b></label>
 				<input type="text" placeholder="עיר,רחוב,מספר בית" name="address" id="address"  required autofocus />
 				<label for="fordate"> <b class="register"> בחר תאריך אספקה רצוי </b> </label>
-				<input type="date"  class="form-control" id="fordate" placeholder="MM/YY" required autofocus/>
-
+				<input type="date" class="form-control" name=dateS id="fordate" placeholder="MM/YY" required autofocus/>
 			</div>
-		</form>
 		<h3>הכנס את פרטי האשראי שלך</h3>
-		<form method="POST" enctype="multipart/form-data" action="/todo">
 			<div class="container">
-
 				<label for="cardNumber"><b class="register">מספר כרטיס</b></label>
 				<input type="text" placeholder="הכנס מספר כרטיס" name="cardNumber" id="cardNumber"  required autofocus />
 				<label for="date"> <b class="register"> תוקף </b> </label>
-				<input type="text"  class="form-control" id="date" placeholder="MM/YY" required />
+				<input type="text"  class="form-control"   name="date" id="date" placeholder="MM/YY" required />
                 <label for="cvv"> <b class="register">קוד סודי</b></label>
-				<input type="text" class="form-control" id="cvv" placeholder="cvv" required />
-				<button  onclick="window.location.href='index.html'" type="submit">שלם </button>
+				<input type="text" class="form-control" name="cvv" id="cvv" placeholder="cvv" required />
+				<button   type="submit">שלם </button>
 			</div>
 		</form>
 		<br>
 		<br>
 		<br><br>
+    {% endif %}
 	</section>
 
 </main>
