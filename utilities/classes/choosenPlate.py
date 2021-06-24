@@ -50,13 +50,6 @@ class choosenPlate:
         result = dbManager.fetch(query)
         return result
 
-    # def get_fruit_regular(self):
-    #     query = "SELECT * FROM fruit WHERE type = '%s'" % ('regular')
-    #     result = dbManager.fetch(query)
-    #     return result
 
-    # def insert_to_self_plate(self, email):
-    #     query = "INSERT INTO self_plate(self_size, self_fruit1, self_fruit2, self_fruit3, self_fruit4, self_fruit5, self_fruit6, self_fruit7, self_fruit8, self_price, user) VALUES ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s', '%s' )" % (self.__self_size, self.__fruit1, self.__fruit2, self.__fruit3, self.__fruit4, self.__fruit5, self.__fruit6, self.__fruit7, self.__fruit8, self.__total_price, self.__user)
-    #     dbManager.commit(query)
 
 

@@ -1,0 +1,17 @@
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (1, 'afarsek', 7, 'regular', '/selfAssembly/media/afarsek.jpg', 'אפרסק');
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (2, 'ananas', 20, 'special', '/selfAssembly/media/ananas.jpg', 'אננס');
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (3, 'anavim', 15, 'regular', '/selfAssembly/media/anavim.jpg', 'ענבים');
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (4, 'duvdevan', 20, 'special', '/selfAssembly/media/duvdevan.jpg', 'דובדבנים');
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (5, 'karambola', 15, 'special', '/selfAssembly/media/karambola.jpg', 'קרמבולה');
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (6, 'kiwi', 10, 'regular', '/selfAssembly/media/kiwi.jpg', 'קיווי');
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (7, 'lychee', 15, 'special', '/selfAssembly/media/lychee.jpg', 'ליצ''י');
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (8, 'melon', 5, 'regular', '/selfAssembly/media/melon.jpg', 'מלון');
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (9, 'mishmesh', 7, 'regular', '/selfAssembly/media/mishmish.jpg', 'משמש');
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (10, 'nectarina', 7, 'regular', '/selfAssembly/media/nectarina.jpg', 'נקטרינה');
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (11, 'ohmaniot', 20, 'special', '/selfAssembly/media/ohmaniot.jpg', 'אוכמניות');
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (12, 'pasiflora', 7, 'special', '/selfAssembly/media/pasiflora.jpg', 'פסיפלורה');
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (13, 'sabre', 10, 'special', '/selfAssembly/media/sabre.jpg', 'סברס');
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (14, 'petel', 20, 'special', '/selfAssembly/media/petel.jpg', 'פטל');
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (15, 'shezifim', 7, 'regular', '/selfAssembly/media/shezifim.jpg', 'שזיפים');
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (16, 'teenim', 15, 'regular', '/selfAssembly/media/teenim.jpg', 'תאנים');
+INSERT INTO group2.fruit (fruit_id, fruit_name, fruit_price, type, photo, hebrew_name) VALUES (17, 'avatiah', 5, 'regular', '/selfAssembly/media/avatiah.jpg', 'אבטיח');

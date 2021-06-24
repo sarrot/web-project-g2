@@ -1,0 +1,9 @@
+INSERT INTO group2.users (first_name, last_name, email, password_user) VALUES ('אלמוג', 'סרפיאן', 'aa@asd.com', '145');
+INSERT INTO group2.users (first_name, last_name, email, password_user) VALUES ('שלי', 'פרומקין', 'af@gmal.com', '134');
+INSERT INTO group2.users (first_name, last_name, email, password_user) VALUES ('אלמוג', 'סרפיאן', 'almog@gmail.com', '098');
+INSERT INTO group2.users (first_name, last_name, email, password_user) VALUES ('אנה', 'פרצובסקי', 'hgfj@gmail.com', '678');
+INSERT INTO group2.users (first_name, last_name, email, password_user) VALUES ('איתי', 'סרוסי', 'itay@gmail.com', '098');
+INSERT INTO group2.users (first_name, last_name, email, password_user) VALUES ('רותם', 'סרוסי', 'rotem21694@gmail.com', '123');
+INSERT INTO group2.users (first_name, last_name, email, password_user) VALUES ('rotem', 'sarusi', 'sarrot@post.bgu.ac.il', '123');
+INSERT INTO group2.users (first_name, last_name, email, password_user) VALUES ('טום', 'סניסר', 'sd@gmail.com', 'sd');
+INSERT INTO group2.users (first_name, last_name, email, password_user) VALUES ('טל', 'סרוסי', 'tal@gmail.com', '148');

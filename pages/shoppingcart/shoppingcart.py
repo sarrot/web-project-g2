@@ -31,12 +31,6 @@ def delete(delete_cart):
     return render_template('shoppingcart.html', cart=cart)
 
 
-@shoppingcart.route('/shoppingcart/updateAmount/<plate_name>')
-def updateAmount(plate_name):
-    value = request.form['value']
-    Plate.update_quantity(value, plate_name)
-    return render_template('shoppingcart.html')
-
 
 @shoppingcart.route('/shoppingcart/updatePrice', methods=['get', 'post'])
 def updatePrice():

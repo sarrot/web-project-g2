@@ -13,6 +13,7 @@ plate = Plate('a', 'a',0)
 @homepage.route('/home')
 @homepage.route('/')
 def index():
+
     plates = plate.get_plate_table()
     return render_template('homepage.html', plates=plates)
 
@@ -64,29 +65,35 @@ def add_to_cart_pampering():
 @homepage.route('/homepage/משפחתי')
 @homepage.route('/homepage/open_family')
 def open_cart_family():
-    return render_template('family.html')
+    plates = plate.get_plate_table()
+    return render_template('family.html', plates =plates)
 
 @homepage.route('/homepage/זוגי')
 @homepage.route('/homepage/open_double' )
 def open_cart_double():
-    return render_template('double.html')
+    plates = plate.get_plate_table()
+    return render_template('double.html', plates =plates)
 
 @homepage.route('/homepage/מרגש')
 @homepage.route('/homepage/open_exciting' )
 def open_cart_exciting():
-    return render_template('exciting.html')
+    plates = plate.get_plate_table()
+    return render_template('exciting.html', plates =plates)
 
 @homepage.route('/homepage/אקזוטי')
 @homepage.route('/homepage/open_exotic' )
 def open_cart_exotic():
-    return render_template('exotic.html')
+    plates = plate.get_plate_table()
+    return render_template('exotic.html', plates =plates)
 
 @homepage.route('/homepage/מהפנט' )
 @homepage.route('/homepage/open_hypnotist' )
 def open_cart_hypnotist():
-    return render_template('hypnotist.html')
+    plates = plate.get_plate_table()
+    return render_template('hypnotist.html', plates =plates)
 
 @homepage.route('/homepage/מפנק' )
 @homepage.route('/homepage/open_pampering' )
 def open_cart_pampering():
-    return render_template('pampering.html')
+    plates = plate.get_plate_table()
+    return render_template('pampering.html', plates =plates)

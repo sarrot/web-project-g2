@@ -1,0 +1,3 @@
+INSERT INTO group2.orders (serial_number, user, address, supply_date, paid) VALUES (1, 'rotem21694@gmail.com', 'באר שבע', '2021-06-26', 1);
+INSERT INTO group2.orders (serial_number, user, address, supply_date, paid) VALUES (59, 'rotem21694@gmail.com', 'מיתר', '2021-06-30', 1);
+INSERT INTO group2.orders (serial_number, user, address, supply_date, paid) VALUES (60, 'almog@gmail.com', 'נתניה', '2021-07-08', 1);

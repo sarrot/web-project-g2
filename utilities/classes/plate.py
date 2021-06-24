@@ -31,14 +31,5 @@ class Plate:
         query = "SELECT * FROM plates where plate_name != 'self_assembly'"
         return dbManager.fetch(query)
 
-    # # def get_plate_name(self):
-    # #     query = "SELECT * FROM cart WHERE plate_name = '%s'" % (self.__plate_name)
-    # #     return dbManager.fetch(query)
-    #
-    # def get_cart_table(self):
-    #     query = "SELECT * FROM cart"
-    #     query_result = dbManager.fetch(query)
-    #     return query_result
-
 
 

@@ -20,7 +20,7 @@ class order:
         dbManager.commit(query)
 
     def update_order_details(self, user, address, date, paid):
-        query = "UPDATE orders SET address='%s',supply_date='%s',paid='%s'  WHERE user = '%s'" % (address,date, paid, user)
+        query = "UPDATE orders SET address='%s',supply_date='%s',paid='%s'  WHERE user = '%s' and paid is NULL" % (address,date, paid, user)
         orders = dbManager.commit(query)
         return orders
 
